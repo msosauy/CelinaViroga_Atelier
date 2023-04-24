@@ -14,7 +14,7 @@ body {
     grid-template-rows: 80px auto 60px;
     grid-template-columns: 100%;
     background-color: rgb(255, 255, 255);
-    background-image: url('../img/bg-pink.jpeg');
+    /* background-image: url('../img/bg-pink.jpeg'); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -59,7 +59,6 @@ nav ul li a {
 }
 
 nav a:hover {
-    /* color: black; */
     filter: drop-shadow(0 0 10px #D14D72);
 }
 
@@ -67,7 +66,34 @@ nav a:hover {
 
 main {
     grid-area: main;
+    display: flex;
+    margin: auto;
 }
+
+.banner-1 {
+    height: 400px;
+    width: 800px;
+    /* background-color: red; */
+    /* background-image: linear-gradient(
+        to bottom,
+        rgb(223, 85, 108),
+        rgb(230, 131, 148),
+        rgb(240, 167, 179)
+    ); */
+}
+
+.space-left{
+    display: inline;
+    height: 100%;
+    width: 50%;
+    background-color: red;
+}
+.space-rigth{
+    display: inline;
+    width: 50%;
+    color: blue;
+}
+
 
 /* #### FOOTER #### */
 
