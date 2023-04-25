@@ -16,81 +16,74 @@
       href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>CV-Atelier</title>
   </head>
 
   <body>
-    <header>
+    <header class="header-mobile">
         <img src="img/logo2.png" alt="logo" class="logo-header" />
-      <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="/pages/servicios.html">Nails</a></li>
-          <li><a href="/pages/servicios.html">Servicios</a></li>
-          <li><a href="/pages/servicios.html">Galería</a></li>
-          <li><a href="/pages/servicios.html">Contacto</a></li>
-        </ul>
-      </nav>
+        <nav class="dropdown-mobile">
+            <div class="dropdown-menu-mobile">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="pages/nails.html">Nails</a></li>
+                    <li><a href="pages/servicios.html">Servicios</a></li>
+                    <li><a href="pages/galeria.html">Galería</a></li>
+                    <li><a href="pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+        <button class="menu-btn">
+            <img src="img/menu_white.png" alt="menu-icon" class="menu-icon" />
+        </button>
     </header>
     <main>
-      <section class="section-top"></section>
+      <section class="section-top not-display"></section>
       <section class="section-bottom">
-        <div class="bottom-left">
-          <img src="img/ellas.jpeg" alt="log_main" class="main-logo">
-        </div>
-        <div class="bottom-rigth">
-          <div class="info">
-            <div class="card">
-              <img src="img/nails.jpeg" alt="nails" />
-              <div class="card-text">
-                <h2>UÑAS ESCULPIDAS</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-                  quasi, cumque magni deserunt nulla vero accusantium.
-                </p>
-              </div>
-            </div>
-            <div class="card">
-              <img src="img/depilacion.jpeg" alt="depilacion" />
-              <div class="card-text">
-                <h2>DEPILACIÓN LASER</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-                  quasi, cumque magni deserunt nulla vero accusantium.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="info">
-            <div class="card">
-              <img src="img/spa_de_pies.jpeg" alt="spa_pies" />
-              <div class="card-text">
-                <h2>SPA DE PIES</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-                  quasi, cumque magni deserunt nulla vero accusantium.
-                </p>
-              </div>
-            </div>
-            <div class="card">
-              <img src="img/micropigmentacion.jpeg" alt="microp" />
-              <div class="card-text">
-                <h2>MICROPIGMENTACIÓN</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-                  quasi, cumque magni deserunt nulla vero accusantium.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+                <div class="card">
+                    <img src="img/nails.jpeg" alt="nails" />
+                    <div class="card-text">
+                        <h2>UÑAS ESCULPIDAS</h2>
+                        <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                        quasi, cumque magni deserunt nulla vero accusantium.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/depilacion.jpeg" alt="depilacion" />
+                    <div class="card-text">
+                        <h2>DEPILACIÓN LASER</h2>
+                        <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                        quasi, cumque magni deserunt nulla vero accusantium.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/spa_de_pies.jpeg" alt="spa_pies" />
+                    <div class="card-text">
+                        <h2>SPA DE PIES</h2>
+                        <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                        quasi, cumque magni deserunt nulla vero accusantium.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/micropigmentacion.jpeg" alt="microp" />
+                    <div class="card-text">
+                        <h2>MICROPIGMENTACIÓN</h2>
+                        <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                        quasi, cumque magni deserunt nulla vero accusantium.
+                        </p>
+                    </div>
+                </div>
       </section>
     </main>
     <footer>
-      <!-- <a href="https://onesolutions.com.uy" target="_blank"
-        ><span class="brand">Manuel Sosa © 2023</span></a
-      > -->
       <a href="https://www.instagram.com/palomurga/" target="_blank">
         <img
           src="img/instagram-icon.png"
@@ -126,5 +119,7 @@
       integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
       crossorigin="anonymous"
     ></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
+
