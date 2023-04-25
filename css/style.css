@@ -24,11 +24,13 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #f1c4db;
-  border-radius: 10px solid white;
+  border: 10px solid white;
+  border-radius: 20px;
+  padding: 20px;
 }
 
 .logo-header {
-  height: 64px;
+  height: 200%;
   margin-left: 20px;
 }
 
