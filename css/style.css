@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Castoro Titling", cursive;
 }
 
 body {
@@ -11,13 +12,8 @@ body {
     "header"
     "main"
     "footer";
-  grid-template-rows: 10% 82% 8%;
+  grid-template-rows: 10% 85% 5%;
   grid-template-columns: 100%;
-  /* background-color: rgb(255, 255, 255); */
-  background-image: url("../img/bg-pink.jpeg");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
 }
 
 /* #### HEADER #### */
@@ -27,20 +23,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient(
-    to bottom,
-    #d14d72,
-    #ffababb2,
-    #fcc8d18b,
-    #fef2f405
-  );
+  background-color: #f1c4db;
+  border-radius: 10px solid white;
 }
 
 .logo-header {
   height: 64px;
-  border-radius: 40px;
   margin-left: 20px;
-  filter: drop-shadow(0 0 10px #d14d72);
 }
 
 nav ul {
@@ -48,10 +37,6 @@ nav ul {
   margin: auto;
   list-style: none;
   margin-right: 20px;
-  box-shadow: -30px 10px 60px black;
-  border-radius: 10px;
-  /* background-color: rgba(255, 192, 203, 0.486); */
-  background-color: rgba(255, 255, 255, 0.753);
 }
 
 nav ul li {
@@ -59,90 +44,85 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #a80da0;
+  color: black;
   text-decoration: none;
   font-size: x-large;
-  filter: drop-shadow(0 0 1px #770909);
-}
-
-nav a:hover {
   filter: drop-shadow(0 0 100px #e02157);
-  /* transition: 700ms; */
-  transition: 2000ms;
 }
 
 /* #### MAIN #### */
 
 main {
   grid-area: main;
-  /* height: 100%;
-  width: 100%; */
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  margin: auto;
 }
 
-.row1 {
-  height: 300px;
-  width: 1000px;
-  border-radius: 20px;
-  box-shadow: 0 0 20px black;
-  margin: 20px;
-  overflow: hidden;
-}
-
-.space-left {
-  float: left;
-  height: 300px;
-  width: 500px;
-  border-radius: 20px 0 0 20px;
-  background-image: url(../img/logo.jpeg);
+.section-top {
+  height: 40%;
+  background-image: url("../img/bg-pink.jpeg");
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 10px solid white;
 }
 
-.space-right {
-  display: inline-block;
-  height: 300px;
-  width: 500px;
-}
-
-h2 {
-    font-family: "Brygada 1918", serif;
-    color: black;
-    height: 60px;
-    text-align: center;
-    background-color: white;
-    padding-top: 10px;
-}
-
-.row2 {
+.section-bottom {
+  height: 60%;
   display: flex;
-  justify-content: space-between;
-  height: 300px;
-  width: 1000px;
-  margin: 20px;
+}
+
+.bottom-left {
+  display: flex;
+  width: 30%;
+}
+
+.bottom-left img {
+  height: 80%;
+  width: auto;
+  margin: auto;
+  border-radius: 100px;
+}
+
+.bottom-rigth {
+  display: flex;
+  height: 100%;
+  width: 70%;
+  padding: 40px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+  margin: 10px;
 }
 
 .card {
-  height: 300px;
-  width: 300px;
-  border-radius: 20px 20px 20px 20px;
-  box-shadow: 0 0 20px black;
-  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  height: 50%;
+  width: 100%;
+  background-color: inherit;
+  border: none;
 }
 
 .card img {
-  height: 250px;
-  width: 300px;
-  object-fit: fill;
+  height: 100%;
+  width: 50%;
+  margin: auto;
+  padding: 10px;
+  border-radius: 120px;
 }
 
 .card-text {
-  font-family: "Brygada 1918", serif;
-  color: #d14d72;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
-  padding-top: 10px;
 }
 
 /* #### FOOTER #### */
@@ -152,28 +132,23 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(
-    to top,
-    #d14d72,
-    #ffababb2,
-    #fcc8d18b,
-    #fef2f405
-  );
+  /* background-color: rgb(216, 162, 241); */
+  /* background-color: #F1C4DB; */
+  background-image: linear-gradient(to top, #f0088080, #f131942a, #f08cc000);
 }
 
 footer a {
   text-decoration: none;
-  filter: drop-shadow(0 0 10px #d14d72);
 }
 
 .brand {
   display: flex;
   margin: 5px 5px auto 5px;
   justify-content: center;
-  color: rgb(216, 216, 216);
+  color: rgba(255, 255, 255, 0.705);
   font-size: 15px;
 }
 
 .footer-icon {
-  height: 20px;
+  height: 30px;
 }
