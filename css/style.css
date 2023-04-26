@@ -31,7 +31,7 @@ header {
 }
 
 .logo-header {
-  height: 200%;
+  height: 180%;
   margin-left: 20px;
 }
 
@@ -119,7 +119,7 @@ main {
   height: 150px;
 }
 
-.card-text  {
+.card-text {
 }
 
 /* #### FOOTER #### */
@@ -129,8 +129,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: rgb(216, 162, 241); */
-  /* background-color: #F1C4DB; */
   background-image: linear-gradient(to top, #f0088080, #f131942a, #f08cc000);
 }
 
@@ -155,6 +153,10 @@ footer a {
 
   .not-display {
     display: none;
+  }
+
+  .logo-header {
+    height: 40px;
   }
 
   .dropdown-mobile {
