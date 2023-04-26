@@ -23,19 +23,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* width: 90%; */
   background-color: #f1c4db;
   border-top: 10px solid white;
   border-right: 10px solid white;
-  border-bottom: 10px solid white;
-  border-radius: 0 30px 30px 0;
-  /* border: 10px solid white;
-  border-radius: 30px; */
+  border-radius: 0 50px 50px 0;
   padding: 20px;
 }
 
 .logo-header {
-  /* height: 50px; */
   height: 200%;
   margin-left: 20px;
 }
@@ -83,7 +78,7 @@ main {
   background-image: url("../img/bg-pink.jpeg");
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 10px solid white;
+  margin-top: 10px;
 }
 
 .section-bottom {
@@ -91,8 +86,7 @@ main {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 3%;
-  margin: auto;
+  margin: 20px 80px 20px 20px;
 }
 
 .card {
@@ -100,23 +94,32 @@ main {
   flex-direction: row;
   height: 50%;
   width: 50%;
-  background-color: inherit;
   border: none;
+  padding: 20px;
 }
 
-.card img {
-  height: 100%;
-  width: 50%;
-  margin: auto;
-  padding: 1%;
+.card-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-img img {
+  height: 150px;
+  width: 150px;
   border-radius: 100%;
 }
 
 .card-text {
-  display: flex;
+  display: inline-block;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  padding-top: 30px;
+  height: 150px;
+}
+
+.card-text  {
 }
 
 /* #### FOOTER #### */
@@ -210,14 +213,36 @@ footer a {
   /* #### MAIN #### */
 
   .section-bottom {
-    height: 100%;
+    display: flex;
     flex-wrap: nowrap;
+    height: 100%;
+    width: 100%;
     margin: unset;
     align-items: center;
   }
 
   .card {
-    width: 80%;
+    display: flex;
     flex-direction: column;
+    height: 500px;
+    width: 80%;
+    margin: 20px 0;
+    border: 1px solid grey;
+  }
+
+  .card-img {
+    display: flex;
+    height: 75%;
+    align-items: center;
+  }
+
+  .card-img img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .card-text {
+    height: 150px;
+    font-size: 10px;
   }
 }
