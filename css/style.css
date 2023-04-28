@@ -57,6 +57,11 @@ nav ul li a {
   filter: drop-shadow(0 0 100px #e02157);
 }
 
+.selected-page {
+  text-shadow: 3px 3px 2px rgba(128, 128, 128, 1);
+  color: #FFFFFF;
+}
+
 .menu-btn,
 .menu-icon {
   display: none;
