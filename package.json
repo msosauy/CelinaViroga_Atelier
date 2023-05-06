@@ -1,0 +1,23 @@
+{
+  "name": "celinaviroga_atelier",
+  "version": "1.0.0",
+  "description": "Cambio de tematica por falta de materiales\r Utilicé % para imagenes, DIV y textos para lograr un sitio mas responsivo.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msosauy/CelinaViroga_Atelier.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/msosauy/CelinaViroga_Atelier/issues"
+  },
+  "homepage": "https://github.com/msosauy/CelinaViroga_Atelier#readme",
+  "dependencies": {
+    "sass": "^1.62.1"
+  }
+}
