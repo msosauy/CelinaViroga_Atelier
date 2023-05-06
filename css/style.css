@@ -102,6 +102,13 @@ main {
   width: 50%;
   border: none;
   padding: 20px;
+  transition: all 2s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 1px 10px black;
+  z-index: 2;
 }
 
 .card-img {
@@ -125,6 +132,7 @@ main {
   text-align: center;
   padding-top: 30px;
   height: 150px;
+  transition: all 1s ease;
 }
 
 /* MAIN Galería */
