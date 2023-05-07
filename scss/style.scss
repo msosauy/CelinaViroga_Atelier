@@ -1,412 +1,71 @@
+// #### VARIABLES ####
+
+$color-main: #f1c4db;
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Castoro Titling", cursive;
-  }
-  
-  body {
-    display: grid;
-    height: 100vh;
-    grid-template-areas:
-      "header"
-      "main"
-      "footer";
-    grid-template-rows: 80px auto 40px;
-    grid-template-columns: 100%;
-  }
-  
-  /* #### HEADER #### */
-  
-  header {
-    grid-area: header;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f1c4db;
-    border-top: 10px solid white;
-    border-right: 10px solid white;
-    border-radius: 0 50px 50px 0;
-    padding: 20px;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  height: 100vh;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: 80px auto 40px;
+  grid-template-columns: 100%;
+}
+
+// #### HEADER ####
+
+header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-main;
+  border-top: 10px solid white;
+  border-right: 10px solid white;
+  border-radius: 0 50px 50px 0;
+  padding: 20px;
+
   .logo-header {
     height: 180%;
     margin-left: 20px;
   }
-  
-  nav ul {
-    display: flex;
-    margin: auto;
-    list-style: none;
-    margin-right: 20px;
-  }
-  
-  .logo-nav {
-    height: 20px;
-  }
-  
-  nav ul li {
-    margin: auto 20px auto 20px;
-    transition: all 1s;
-  }
-  
-  nav ul li:hover {
-    transform: scale(1.2);
-  }
-  
-  nav ul li a {
-    color: black;
-    text-decoration: none;
-    font-size: x-large;
-    filter: drop-shadow(0 0 100px #e02157);
-  }
-  
-  .selected-page {
-    text-shadow: 3px 3px 2px rgba(128, 128, 128, 1);
-    color: #FFFFFF;
-  }
-  
-  .menu-btn,
-  .menu-icon {
-    display: none;
-  }
-  
-  /* #### MAIN #### */
-  
-  main {
-    grid-area: main;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    overflow: auto;
-  }
-  
-  .section-top {
-    height: 40%;
-    margin-top: 10px;
-    background-image: url("../img/bg-pink.jpeg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-  
-  .section-bottom {
-    height: 60%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 20px 80px 20px 20px;
-  }
-  
-  .card {
-    display: flex;
-    flex-direction: row;
-    height: 50%;
-    width: 50%;
-    border: none;
-    padding: 20px;
-    transition: all 2s;
-    background-color: inherit;
-  }
-  
-  .card:hover {
-    transform: scale(1.1);
-    z-index: 2;
-  }
-  
-  .card-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
-    width: 150px;
-  }
-  
-  .card-img img {
-    height: 150px;
-    width: 150px;
-    border-radius: 100%;
-  }
-  
-  .card-text {
-    display: inline-block;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    padding-top: 30px;
-    height: 150px;
-  }
-  
-  /* MAIN Galería */
-  
-  .section-top--galeria {
-    height: 20%;
-    margin-top: 10px;
-  }
-  
-  .section-bottom--galeria {
-    display: flex;
-    justify-content: center;
-    padding: 5%;
-    height: 80%;
-  }
-  
-  .bg-image {
-    background-image: url("../img/bg-pink.jpeg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    filter: blur(1px);
-    -webkit-filter: blur(1px);
-    height: 100%;
-  }
-  
-  .bg-text {
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(32, 31, 31, 0.4);
-    background-color: rgb(168, 164, 164);
-    color: white;
-    font-weight: bold;
-    border: 3px solid white;
-    box-shadow: 0.5px 5px 10px rgba(0, 0, 0, 0.493);
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50%;
-    padding: 20px 30px 0 30px;
-    text-align: center;
-  }
-  
-  /* Bootstrap class sobrescrita */
-  .carousel {
-    width: 50%;
-    box-shadow: 1px 1px 10px black;
-    border: 1px solid grey;
-    border-radius: 5%;
-    /* margin-top: 60px; */
-    overflow: hidden;
-  }
-  
-  /* #### MAIN Contacto #### */
-  
-  .section-contacto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    margin-top: 10px;
-    background-image: url('../img/bg-pink.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: auto;
-  }
-  
-  .contacto {
-    text-align: center;
-    margin-top: 20px;
-    overflow: auto;
-    padding: 40px 20px;
-    border: 1px solid grey;
-    border-radius: 1%;
-    background-color: #f1c4db81;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .form-linea {
-    display: flex;
-    justify-content: space-evenly;
-    height: 50px;
-    width: 100%;
-    margin: 10px auto;
-  }
-  
-  .contacto label {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 40px;
-    width: 100px;
-  }
-  
-  .section-contacto input {
-    height: 40px;
-    width: 250px;
-  }
-  
-  /* #### FOOTER #### */
-  
-  footer {
-    grid-area: footer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(to top, #f0088080, #f131942a, #f08cc000);
-  }
-  
-  footer a {
-    text-decoration: none;
-  }
-  
-  .brand {
-    display: flex;
-    margin: 5px 5px auto 5px;
-    justify-content: center;
-    color: rgba(255, 255, 255, 0.705);
-    font-size: 15px;
-  }
-  
-  .footer-icon {
-    height: 30px;
-  }
-  
-  @media screen and (max-width: 1150px) {
-    /* #### HEADER #### */
-  
-    .not-display {
-      display: none;
-    }
-  
-    .logo-header {
-      height: 64px;
-    }
-  
-    .dropdown-mobile {
-      display: none;
-      z-index: 10;
-    }
-  
-    /* Esta clase se aplica con JS cuando se presiona .menu-btn */
-    .dropdown-mobile.visible {
+
+  nav {
+    ul {
       display: flex;
-    }
-  
-    .dropdown-menu-mobile {
-      position: absolute;
-      right: 20px;
-      top: 80px;
-      display: flex;
-      background-color: rgb(255, 255, 255);
-      border-radius: 15px;
-      box-shadow: 0 2px 5px 0 rgba(0, 0, 0);
-    }
-  
-    .selected-page {
-      text-shadow: none;
-      color: black;
-    }
-  
-  
-    nav ul {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 10px;
-    }
-  
-    nav ul li {
-      margin: 5px;
-    }
-  
-    nav ul li a {
-      color: rgb(0, 0, 0);
-    }
-    .menu-btn {
-      display: inherit;
-      height: 40px;
-      width: 40px;
-      margin-right: 15px;
-      border: none;
-      background-color: inherit;
-    }
-  
-    .menu-icon {
-      display: inherit;
-      height: inherit;
-      padding: 3px;
-      border-radius: 10px;
-    }
-  
-    /* #### MAIN #### */
-  
-    .section-bottom {
-      display: flex;
-      flex-wrap: nowrap;
-      height: 100%;
-      width: 100%;
-      margin: unset;
-      align-items: center;
-    }
-  
-    .card {
-      display: flex;
-      flex-direction: column;
-      height: 500px;
-      width: 80%;
-      margin: 20px 0;
-      border: 1px solid grey;
-    }
-  
-    .card-img {
-      display: flex;
-      height: 75%;
       margin: auto;
+      margin-right: 20px;
+
+      li {
+        margin: auto 20px auto 20px;
+        list-style: none;
+        transition: all 1s;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+
+        .selected-page {
+          text-shadow: 3px 3px 2px rgba(128, 128, 128, 1);
+          color: #ffffff;
+        }
+
+        a {
+          color: black;
+          text-decoration: none;
+          font-size: x-large;
+          filter: drop-shadow(0 0 100px #e02157);
+        }
+      }
     }
-    
-    .card-img img {
-      height: 150px;
-      width: 150px;
-    }
-  
-    .card-text {
-      height: 150px;
-      font-size: 10px;
-    }
-  
-    /* Galeria */
-  
-    .bg-text {
-      width: 80%;
-    }
-    .carousel {
-      width: 120%;
-      margin-top: 40px;
-    }
-  
-    .carousel-inner{
-      background-size: cover !important;
-    }
-  
   }
-  
-  @media screen and (max-width: 505px) {
-    
-    /* CONTACTO */
-    
-    textarea {
-      width: 90%;
-    }
-  
-    .actions input {
-      width: 80%;
-      margin: 10px;
-    }
-  
-    .section-contacto {
-      background-image: none;
-    }
-  
-    .contacto {
-      background-color: white;
-      border: none;
-    }
-  
-  }
-  
+}
+
+// #### MAIN ####
