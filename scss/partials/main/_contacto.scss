@@ -1,0 +1,67 @@
+main {
+  .section-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 10px;
+    background-image: url("../img/bg-pink.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+
+    .contacto {
+      text-align: center;
+      margin-top: 20px;
+      overflow: auto;
+      padding: 40px 20px;
+      border: 1px solid grey;
+      border-radius: 1%;
+      background-color: #f1c4db81;
+
+      h2 {
+        font-family: $font-family-primary;
+      }
+
+      p {
+        font-family: $font-family-primary;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+
+        .form-linea {
+          display: flex;
+          justify-content: space-evenly;
+          height: 50px;
+          width: 100%;
+          margin: 10px auto;
+        }
+
+        label {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          height: 40px;
+          width: 100px;
+          font-family: $font-family-primary;
+        }
+
+        input {
+          height: 40px;
+          width: 250px;
+        }
+
+        select {
+          font-family: $font-family-primary;
+        }
+
+        textarea {
+          font-family: $font-family-primary;
+        }
+      }
+    }
+  }
+}

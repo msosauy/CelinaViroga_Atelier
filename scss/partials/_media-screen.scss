@@ -6,12 +6,12 @@
   /* #### HEADER #### */
 
   header {
+    
     .logo-header {
       height: 64px;
     }
 
     /* Esta clase se aplica con JS cuando se presiona .menu-btn */
-
     .visible {
       display: flex;
     }
@@ -99,7 +99,7 @@
         }
 
         .card-text {
-          height: 150px;
+          // height: 150px;
           font-size: 10px;
         }
       }
@@ -112,9 +112,9 @@
       }
     }
 
-    .ection-bottom--galeria {
+    .section-bottom--galeria {
       .carousel {
-        width: 120%;
+        width: 80%;
         margin-top: 40px;
 
         .carousel-inner {
@@ -126,31 +126,29 @@
 }
 
 
-
-
-
-
-
-
-
 @media screen and (max-width: 505px) {
   /* CONTACTO */
 
-  textarea {
-    width: 90%;
-  }
-
-  .actions input {
-    width: 80%;
-    margin: 10px;
-  }
-
   .section-contacto {
     background-image: none;
-  }
 
-  .contacto {
-    background-color: white;
-    border: none;
+    .contacto {
+      background-color: white;
+      border: none;
+    }
+
+    form {
+    
+      textarea {
+        width: 90%;
+      }
+    
+      input {
+        width: 80%;
+        margin: 10px;
+      }
+    }
+
   }
+  
 }
