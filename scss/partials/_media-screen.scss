@@ -1,0 +1,156 @@
+@media screen and (max-width: 1150px) {
+  .not-display {
+    display: none;
+  }
+
+  /* #### HEADER #### */
+
+  header {
+    .logo-header {
+      height: 64px;
+    }
+
+    /* Esta clase se aplica con JS cuando se presiona .menu-btn */
+
+    .visible {
+      display: flex;
+    }
+
+    nav {
+      display: none;
+      z-index: 10;
+
+      .dropdown-menu-mobile {
+        position: absolute;
+        right: 20px;
+        top: 80px;
+        display: flex;
+        background-color: rgb(255, 255, 255);
+        border-radius: 15px;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0);
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 10px;
+
+          li {
+            margin: 5px;
+
+            a {
+              color: rgb(0, 0, 0);
+            }
+
+            .selected-page {
+              text-shadow: none;
+              color: inherit;
+            }
+          }
+        }
+      }
+    }
+
+    .menu-btn {
+      display: inherit;
+      height: 40px;
+      width: 40px;
+      margin-right: 15px;
+      border: none;
+      background-color: inherit;
+      img {
+        display: inherit;
+        height: inherit;
+        padding: 3px;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  /* #### MAIN #### */
+
+  main {
+    // #### INICIO ####
+    .section-bottom {
+      display: flex;
+      flex-wrap: nowrap;
+      height: 100%;
+      width: 100%;
+      margin: unset;
+      align-items: center;
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        width: 80%;
+        margin: 20px 0;
+        border: 1px solid grey;
+
+        .card-img {
+          display: flex;
+          height: 75%;
+          margin: auto;
+
+          img {
+            height: 150px;
+            width: 150px;
+          }
+        }
+
+        .card-text {
+          height: 150px;
+          font-size: 10px;
+        }
+      }
+    }
+
+    /* #### GALERÍA #### */
+    .section-top--galeria {
+      .bg-text {
+        width: 80%;
+      }
+    }
+
+    .ection-bottom--galeria {
+      .carousel {
+        width: 120%;
+        margin-top: 40px;
+
+        .carousel-inner {
+          background-size: cover !important;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 505px) {
+  /* CONTACTO */
+
+  textarea {
+    width: 90%;
+  }
+
+  .actions input {
+    width: 80%;
+    margin: 10px;
+  }
+
+  .section-contacto {
+    background-image: none;
+  }
+
+  .contacto {
+    background-color: white;
+    border: none;
+  }
+}

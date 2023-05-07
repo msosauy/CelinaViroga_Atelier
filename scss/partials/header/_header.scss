@@ -1,0 +1,53 @@
+@import '../variables';
+
+header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-primary;
+  border-top: 10px solid white;
+  border-right: 10px solid white;
+  border-radius: 0 50px 50px 0;
+  padding: 20px;
+
+  .logo-header {
+    height: 180%;
+    margin-left: 20px;
+  }
+
+  nav {
+    ul {
+      display: flex;
+      margin: auto;
+      margin-right: 20px;
+
+      li {
+        margin: auto 20px auto 20px;
+        list-style: none;
+        transition: all 1s;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+
+        a {
+          font-family: $font-family-primary;
+          font-size: x-large;
+          text-decoration: none;
+          color: black;
+        }
+
+        .selected-page {
+          color: #ffffff;
+          text-shadow: $text-shadow;
+        }
+      }
+    }
+  }
+  
+  .menu-btn,
+  .menu-icon {
+    display: none;
+  }
+}

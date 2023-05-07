@@ -1,0 +1,25 @@
+@import '../variables';
+
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, #f0088080, #f131942a, #f08cc000);
+  }
+  
+  footer a {
+    text-decoration: none;
+  }
+  
+  .brand {
+    display: flex;
+    margin: 5px 5px auto 5px;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.705);
+    font-size: 15px;
+  }
+  
+  .footer-icon {
+    height: 30px;
+  }
