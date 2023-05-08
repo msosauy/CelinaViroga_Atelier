@@ -11,10 +11,10 @@ body {
   height: 100vh;
   grid-template-areas:
     "header"
-    "main"
-    "footer";
-  grid-template-rows: 100px auto 40px;
+    "main";
+  grid-template-rows: 100px auto;
   grid-template-columns: 100%;
+  background-color: $color-secondary;
 }
 
 // #### HEADER ####

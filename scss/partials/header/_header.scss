@@ -6,21 +6,23 @@ header {
   .info {
     display: flex;
     justify-content: space-around;
-    align-items: center;
     height: 25px;
-    background-color: #313A46;
+    background-color: #313a46;
+
+    img {
+      height: 15px;
+      margin-bottom: 3px;
+    }
+    
+    .flag {
+      border-radius: 15px;
+    }
 
     span {
       color: white;
-      margin: 0 10px;
-    }
-
-    .ubicacion {
-
-      img {
-        height: 15px;
-      }
-
+      height: 15px;
+      margin: 0 5px;
+      text-align: center;
     }
 
   }
@@ -66,12 +68,11 @@ header {
         }
       }
     }
+  }
 
-    .menu-btn,
+  .menu-btn,
     .menu-icon {
       display: none;
     }
-
-  }
 
 }

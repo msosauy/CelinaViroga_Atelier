@@ -1,116 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>CV-Atelier</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
-  <title>CV-Atelier</title>
-</head>
-
-<body>
-  <header>
-    <div class="info">
-      <span>info@cvatelier.com.uy</span>
-      <div class="ubicacion">
-        <img src="img/uy_flag.webp" alt="uyFlag">
-        <span>Rocha, La Paloma</span>
-      </div>
-    </div>
-    <div class="nav-header">
-      <img src="img/logo2.png" alt="logo" class="logo-header" />
-      <nav class="dropdown-mobile">
-        <div class="dropdown-menu-mobile">
-          <ul>
-            <li><a href="index.html" class="selected-page">Inicio</a></li>
-            <li><a href="pages/nails.html">Nails</a></li>
-            <li><a href="pages/servicios.html">Servicios</a></li>
-            <li><a href="pages/galeria.html">Galería</a></li>
-            <li><a href="pages/contacto.html">Contacto</a></li>
-          </ul>
+  <body>
+    <header>
+      <div class="info">
+        <div>
+          <img src="img/mail1.png" alt="mail" />
+          <span>info@cvatelier.com.uy</span>
         </div>
-      </nav>
-      <button class="menu-btn">
-        <img src="img/menu_white.png" alt="menu-icon" />
-      </button>
-    </div>
-  </header>
-  <main>
-    <section class="section-top not-display">
-      <h1>La magia ocurre cuando amas lo que haces</h1>
-    </section>
-    <section class="section-bottom">
-      <div class="card">
-        <div class="card-img">
-          <img src="img/nails.jpeg" alt="nails" />
-        </div>
-        <div class="card-text">
-          <h2>UÑAS ESCULPIDAS</h2>
-          <p>
-            Uñas esculpidas y acrílicas duración 21 días la mejor calidad del lugar
-          </p>
+        <div>
+          <img src="img/uy_flag.webp" alt="uyFlag" class="flag"/>
+          <span>Rocha, La Paloma</span>
         </div>
       </div>
-      <div class="card">
-        <div class="card-img">
-          <img src="img/depilacion.jpeg" alt="depilacion" />
-        </div>
-        <div class="card-text">
-          <h2>DEPILACIÓN LASER</h2>
-          <p>
-            Es un procedimiento que utiliza un rayo concentrado de luz (láser) para eliminar el vello no deseado
-          </p>
-        </div>
+      <div class="nav-header">
+        <img src="img/logo2.png" alt="logo" class="logo-header" />
+        <nav class="dropdown-mobile">
+          <div class="dropdown-menu-mobile">
+            <ul>
+              <li><a href="index.html" class="selected-page">Inicio</a></li>
+              <li><a href="pages/nails.html">Nails</a></li>
+              <li><a href="pages/servicios.html">Servicios</a></li>
+              <li><a href="pages/galeria.html">Galería</a></li>
+              <li><a href="pages/contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+        </nav>
+        <button class="menu-btn">
+          <img src="img/menu_white.png" alt="menu-icon" />
+        </button>
       </div>
-      <div class="card">
-        <div class="card-img">
-          <img src="img/spa_de_pies.jpeg" alt="spa_pies" />
+    </header>
+    <main>
+      <section class="section-top not-display">
+        <h1>La magia ocurre cuando amas lo que haces</h1>
+      </section>
+      <section class="section-bottom">
+        <div class="card">
+          <div class="card-img">
+            <img src="img/nails.jpeg" alt="nails" />
+          </div>
+          <div class="card-text">
+            <h2>UÑAS ESCULPIDAS</h2>
+            <p>
+              Uñas esculpidas y acrílicas duración 21 días la mejor
+              calidad del lugar
+            </p>
+          </div>
         </div>
-        <div class="card-text">
-          <h2>SPA DE PIES</h2>
-          <p>
-            Realizamos un tratamiento cosmético que se dedica al cuidado integral de los pies (no
-            solamente de las uñas).
-          </p>
+        <div class="card">
+          <div class="card-img">
+            <img src="img/depilacion.jpeg" alt="depilacion" />
+          </div>
+          <div class="card-text">
+            <h2>DEPILACIÓN LASER</h2>
+            <p>
+              Es un procedimiento que utiliza un rayo concentrado de luz (láser)
+              para eliminar el vello no deseado
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="card-img">
-          <img src="img/micropigmentacion.jpeg" alt="microp" />
+        <div class="card">
+          <div class="card-img">
+            <img src="img/spa_de_pies.jpeg" alt="spa_pies" />
+          </div>
+          <div class="card-text">
+            <h2>SPA DE PIES</h2>
+            <p>
+              Realizamos un tratamiento cosmético que se dedica al cuidado
+              integral de los pies (no solamente de las uñas).
+            </p>
+          </div>
         </div>
-        <div class="card-text">
-          <h2>MICROPIGMENTACIÓN</h2>
-          <p>
-            Tratamiento de maquillaje semipermanente que sirve para embellecer, corregir y destacar cejas y labios.
-          </p>
+        <div class="card">
+          <div class="card-img">
+            <img src="img/micropigmentacion.jpeg" alt="microp" />
+          </div>
+          <div class="card-text">
+            <h2>MICROPIGMENTACIÓN</h2>
+            <p>
+              Tratamiento de maquillaje semipermanente que sirve para
+              embellecer, corregir y destacar cejas y labios.
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <a href="https://www.instagram.com/palomurga/" target="_blank">
-      <img src="img/instagram-icon.png" alt="instagram_icon" class="footer-icon" />
-    </a>
-    <a href="https://www.facebook.com/palo.murga" target="_blank">
-      <img src="img/facebook-icon.png" alt="facebook_icon" class="footer-icon" />
-    </a>
-    <a href="https://www.youtube.com/channel/UCVAPguK2TrzQ8CdJ_D1Tagg" target="_blank">
-      <img src="img/youtube-icon.png" alt="youtube_icon" class="footer-icon" />
-    </a>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
-    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
-    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
-    crossorigin="anonymous"></script>
-  <script src="js/index.js"></script>
-</body>
-
+      </section>
+      <!-- <footer>
+        <a href="https://www.instagram.com/palomurga/" target="_blank">
+          <img
+            src="img/instagram-icon.png"
+            alt="instagram_icon"
+            class="footer-icon"
+          />
+        </a>
+        <a href="https://www.facebook.com/palo.murga" target="_blank">
+          <img
+            src="img/facebook-icon.png"
+            alt="facebook_icon"
+            class="footer-icon"
+          />
+        </a>
+        <a
+          href="https://www.youtube.com/channel/UCVAPguK2TrzQ8CdJ_D1Tagg"
+          target="_blank"
+        >
+          <img
+            src="img/youtube-icon.png"
+            alt="youtube_icon"
+            class="footer-icon"
+          />
+        </a>
+      </footer> -->
+    </main>
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+      integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/index.js"></script>
+  </body>
 </html>

@@ -12,9 +12,10 @@
 body {
   display: grid;
   height: 100vh;
-  grid-template-areas: "header" "main" "footer";
-  grid-template-rows: 100px auto 40px;
+  grid-template-areas: "header" "main";
+  grid-template-rows: 100px auto;
   grid-template-columns: 100%;
+  background-color: #EEE7E4;
 }
 
 header {
@@ -23,16 +24,21 @@ header {
 header .info {
   display: flex;
   justify-content: space-around;
-  align-items: center;
   height: 25px;
-  background-color: #313A46;
+  background-color: #313a46;
+}
+header .info img {
+  height: 15px;
+  margin-bottom: 3px;
+}
+header .info .flag {
+  border-radius: 15px;
 }
 header .info span {
   color: white;
-  margin: 0 10px;
-}
-header .info .ubicacion img {
   height: 15px;
+  margin: 0 5px;
+  text-align: center;
 }
 header .nav-header {
   display: flex;
@@ -68,8 +74,8 @@ header .nav-header nav ul li .selected-page {
   color: #ffffff;
   text-shadow: 3px 3px 2px rgb(128, 128, 128);
 }
-header .nav-header .menu-btn,
-header .nav-header .menu-icon {
+header .menu-btn,
+header .menu-icon {
   display: none;
 }
 
@@ -82,24 +88,28 @@ main {
   overflow: auto;
 }
 main .section-top {
+  display: flex;
+  flex-direction: column;
   height: 40%;
   background-image: url("../img/bg-pink.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  text-align: center;
+  justify-content: center;
 }
 main .section-top h1 {
   font-size: 3rem;
   font-family: "Castoro Titling", cursive;
   color: white;
+  text-shadow: 3px 3px 2px rgb(128, 128, 128);
+  margin-left: 20px;
 }
 main .section-bottom {
   height: 60%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 20px 80px 20px 20px;
+  margin: 20px 80px 20px 80px;
 }
 main .section-bottom .card {
   display: flex;
@@ -108,7 +118,8 @@ main .section-bottom .card {
   width: 50%;
   border: none;
   padding: 20px;
-  background-color: inherit;
+  margin: 10px 0;
+  background-color: #EEE7E4;
   transition: all 2s;
 }
 main .section-bottom .card:hover {
@@ -283,7 +294,7 @@ footer a {
   header nav .dropdown-menu-mobile {
     position: absolute;
     right: 20px;
-    top: 80px;
+    top: 110px;
     display: flex;
     background-color: rgb(255, 255, 255);
     border-radius: 15px;
