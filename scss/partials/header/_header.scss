@@ -2,52 +2,76 @@
 
 header {
   grid-area: header;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: $color-primary;
-  border-top: 10px solid white;
-  border-right: 10px solid white;
-  border-radius: 0 50px 50px 0;
-  padding: 20px;
+  
+  .info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 25px;
+    background-color: #313A46;
 
-  .logo-header {
-    height: 180%;
-    margin-left: 20px;
+    span {
+      color: white;
+      margin: 0 10px;
+    }
+
+    .ubicacion {
+
+      img {
+        height: 15px;
+      }
+
+    }
+
   }
 
-  nav {
-    ul {
-      display: flex;
-      margin: auto;
-      margin-right: 20px;
+  .nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-primary;
+    height: 75px;
 
-      li {
-        margin: auto 20px auto 20px;
-        list-style: none;
-        transition: all 1s;
+    .logo-header {
+      height: 50px;
+      margin-left: 20px;
+    }
 
-        &:hover {
-          transform: scale(1.2);
-        }
+    nav {
+      ul {
+        display: flex;
+        margin: auto;
+        margin-right: 20px;
 
-        a {
-          font-family: $font-family-primary;
-          font-size: x-large;
-          text-decoration: none;
-          color: black;
-        }
+        li {
+          margin: auto 20px auto 20px;
+          list-style: none;
+          transition: all 1s;
 
-        .selected-page {
-          color: #ffffff;
-          text-shadow: $text-shadow;
+          &:hover {
+            transform: scale(1.2);
+          }
+
+          a {
+            font-family: $font-family-primary;
+            font-size: large;
+            text-decoration: none;
+            color: black;
+          }
+
+          .selected-page {
+            color: #ffffff;
+            text-shadow: $text-shadow;
+          }
         }
       }
     }
+
+    .menu-btn,
+    .menu-icon {
+      display: none;
+    }
+
   }
-  
-  .menu-btn,
-  .menu-icon {
-    display: none;
-  }
+
 }
