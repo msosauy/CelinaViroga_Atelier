@@ -60,7 +60,7 @@ header .nav-header nav ul li:hover {
 }
 header .nav-header nav ul li a {
   font-family: "Castoro Titling", cursive;
-  font-size: large;
+  font-size: 1.5rem;
   text-decoration: none;
   color: black;
 }
@@ -90,7 +90,7 @@ main .section-top {
   text-align: center;
 }
 main .section-top h1 {
-  font-size: 1.5rem;
+  font-size: 3rem;
   font-family: "Castoro Titling", cursive;
   color: white;
 }
