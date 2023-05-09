@@ -1,6 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
 $color-primary: #f1c4db;
 $color-secondary: #EEE7E4;
+// $color-dark: #222222;
+$color-dark: #313a46;
 $font-family-primary: "Castoro Titling",  cursive;
+$font-family-footer: "Verdana", cursive;
 $text-shadow: 3px 3px 2px rgba(128, 128, 128, 1);
-$hideperra: "putooooo";
+$box-shadow: 3px 3px 20px rgba(128, 128, 128, 1);
+
+@mixin footer-styles {
+    h3 {
+        display: inline;
+        color: $color-primary;
+        font-family: $font-family-footer;
+        font-size: 1.2rem;
+        margin-left: 40px;
+      }
+  
+      span {
+        display: block;
+        color: white;
+        font-family: $font-family-footer;
+        font-size: 1rem;
+        padding: 0.1rem;
+        margin-left: 60px;
+      }
+  
+      .footer__contact--data {
+        color: rgb(179, 176, 176);
+        font-size: 0.8rem;
+        font-weight: normal;
+        margin-left: 75px;
+      }
+}

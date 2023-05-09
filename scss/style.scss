@@ -7,13 +7,6 @@
 }
 
 body {
-  display: grid;
-  height: 100vh;
-  grid-template-areas:
-    "header"
-    "main";
-  grid-template-rows: 100px auto;
-  grid-template-columns: 100%;
   background-color: $color-secondary;
 }
 
@@ -22,11 +15,11 @@ body {
 
 // #### MAIN ####
 @import 'partials/main/inicio';
-@import 'partials/main/galeria';
-@import 'partials/main/contacto';
+// @import 'partials/main/galeria';
+// @import 'partials/main/contacto';
 
 // #### FOOTER ####
 @import 'partials/footer/footer';
 
 // #### @media screen ####
-@import 'partials/media-screen';
+// @import 'partials/media-screen';
