@@ -17,19 +17,23 @@ header .header__info {
   justify-content: space-around;
   height: 25px;
   background-color: #313a46;
+  font-size: 12px;
+}
+header .header__info .header__info__item {
+  display: flex;
+  align-items: center;
 }
 header .header__info img {
   height: 15px;
-  margin-bottom: 3px;
 }
-header .header__info .flag {
+header .header__info .item__border {
   border-radius: 15px;
 }
 header .header__info span {
   color: white;
   height: 15px;
   margin: 0 5px;
-  text-align: center;
+  margin-bottom: 5px;
 }
 header .nav-header {
   display: flex;
@@ -84,6 +88,7 @@ main .hero {
   background-position: center;
   background-size: cover;
   justify-content: center;
+  margin-bottom: 30px;
 }
 main .hero h1 {
   font-size: 3rem;
@@ -93,42 +98,68 @@ main .hero h1 {
   margin-left: 20px;
   transition-delay: 5s;
   transition: all 2s;
+  width: 70%;
 }
-main .content__inicio {
-  padding: 20px 50px;
-}
-main .content__inicio .row__main__inicio {
+main .content__inicio--top {
   display: flex;
-  justify-content: space-around;
-}
-main .content__inicio--bottom {
-  margin: 20px;
-  padding: 20px 50px;
-  text-align: center;
-  border-radius: 15px;
-  background-color: white;
-}
-main .content__inicio--bottom .row__main__inicio {
-  display: flex;
-  justify-content: space-around;
-}
-main .content__inicio--bottom img {
-  max-height: 250px;
-  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
   box-shadow: 3px 3px 20px rgb(128, 128, 128);
-  margin: 20px;
-  transition: transform 1s;
+  background-color: rgba(241, 196, 219, 0.6352941176);
 }
-main .content__inicio--bottom img:hover {
+main .content__inicio--top .row__main__inicio--top {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  border-radius: 15px;
+}
+main .content__inicio--top .row__main__inicio--top .card__nails {
+  background-color: white;
+  border-radius: 15px;
+  margin: 10px;
+  transition: all 1s;
+  text-align: center;
+}
+main .content__inicio--top .row__main__inicio--top .card__nails:hover {
   transform: scale(1.1);
 }
-main .content__inicio--bottom span {
+main .content__inicio--top .row__main__inicio--top .card__nails img {
+  border-radius: 15px;
+  box-shadow: 3px 3px 20px rgb(128, 128, 128);
+  margin: 30px 20px 20px 20px;
+  max-height: 200px;
+}
+main .content__inicio--top .row__main__inicio--top .card__nails .card__nails__title {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
   font-family: "Castoro Titling", cursive;
   background-color: white;
   border-radius: 10px;
-  border: 1px solid rgb(206, 203, 203);
   box-shadow: -0.5px 1px 5px rgba(0, 0, 0, 0.493);
   padding: 8px;
+  width: 80%;
+}
+main .content__inicio--top .row__main__inicio--top .card__nails .card__nails__info {
+  color: rgb(179, 176, 176);
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+main .content__inicio__bottom {
+  padding: 20px 50px;
+}
+main .content__inicio__bottom .row__main__inicio--bottom {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+main .content__inicio__bottom .row__main__inicio--bottom .instagram__media {
+  width: 25vw;
+  display: flex;
+  justify-content: center;
 }
 
 footer {
@@ -182,6 +213,9 @@ footer .footer__info .footer__services .footer__contact--data {
   font-size: 0.8rem;
   font-weight: normal;
   margin-left: 75px;
+}
+footer .footer__info .footer__services h3 {
+  margin-left: 70px;
 }
 footer .footer__info .footer__services .footer__services__info {
   display: flex;

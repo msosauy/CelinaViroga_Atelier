@@ -1,19 +1,24 @@
 @import '../variables';
 
 header {
-  
+
   .header__info {
     display: flex;
     justify-content: space-around;
     height: 25px;
     background-color: $color-dark;
+    font-size: 12px;
+
+    .header__info__item {
+      display: flex;
+      align-items: center;
+    }
 
     img {
       height: 15px;
-      margin-bottom: 3px;
     }
     
-    .flag {
+    .item__border {
       border-radius: 15px;
     }
 
@@ -21,7 +26,7 @@ header {
       color: white;
       height: 15px;
       margin: 0 5px;
-      text-align: center;
+      margin-bottom: 5px;
     }
 
   }

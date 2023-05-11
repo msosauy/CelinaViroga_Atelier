@@ -35,6 +35,10 @@ footer {
 
       @include footer-styles;
 
+      h3 {
+        margin-left: 70px;
+      }
+      
       .footer__services__info {
         display: flex;
         justify-content: space-evenly;
