@@ -115,7 +115,7 @@ main .content__inicio--top .row__main__inicio--top {
   border-radius: 15px;
 }
 main .content__inicio--top .row__main__inicio--top .card__nails {
-  background-color: white;
+  background-color: whitesmoke;
   border-radius: 15px;
   margin: 10px;
   transition: all 1s;
@@ -136,7 +136,7 @@ main .content__inicio--top .row__main__inicio--top .card__nails .card__nails__ti
   left: 50%;
   transform: translateX(-50%);
   font-family: "Castoro Titling", cursive;
-  background-color: white;
+  background-color: whitesmoke;
   border-radius: 10px;
   box-shadow: -0.5px 1px 5px rgba(0, 0, 0, 0.493);
   padding: 8px;
