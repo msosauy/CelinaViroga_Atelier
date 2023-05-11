@@ -18,7 +18,7 @@ footer {
       justify-content: center;
       align-items: center;
       gap: 1rem;
-      width: 30%;
+      width: 20%;
 
       img {
         height: 30px;
@@ -28,16 +28,18 @@ footer {
     .footer__services {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      width: 35%;
+      padding-top: 30px;
+      width: 50%;
       margin: 15px 0;
       border-left: 1px solid grey;
 
-      img {
-        height: 2rem;
-      }
-
       @include footer-styles;
+
+      .footer__services__info {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 10px;
+      }
 
       a {
         text-decoration: none;
@@ -48,8 +50,8 @@ footer {
     .footer__contact {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      width: 35%;
+      padding-top: 30px;
+      width: 30%;
       margin: 15px 0;
       border-left: 1px solid grey;
 
