@@ -163,49 +163,73 @@ header .menu-icon {
   justify-content: center;
 }
 
-.main__servicios {
-  height: auto;
+main .hero {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
   background-image: url("../img/bg-pink.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  justify-content: center;
 }
-.main__servicios .not-display {
-  display: none;
+main .hero h1 {
+  font-size: 3rem;
+  font-family: "Castoro Titling", cursive;
+  color: white;
+  text-shadow: 3px 3px 2px rgb(128, 128, 128);
+  margin-left: 50px;
+  transition-delay: 5s;
+  transition: all 2s;
+  width: 70%;
 }
-.main__servicios .section__bottom {
+main .main__servicios {
   display: flex;
   flex-direction: column;
-  height: 400px;
+  overflow: scroll;
+}
+main .main__servicios .main__servicios__info {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-right: 20px;
+}
+main .main__servicios .main__servicios__info .services__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 350px;
+  width: 20%;
+  border-bottom: 10px solid #f1c4db;
+  border-radius: 15px;
+  background-color: white;
   margin: 20px;
 }
-.main__servicios .section__bottom .card {
+main .main__servicios .main__servicios__info .services__card .services__card--top {
   display: flex;
-  flex-direction: row;
-  height: 50%;
-  width: 50%;
-  padding: 20px;
-  transition: all 2s;
-}
-.main__servicios .section__bottom .card .card-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 150px;
-  width: 150px;
-}
-.main__servicios .section__bottom .card .card-img img {
-  height: 150px;
-  width: 150px;
-  border-radius: 100%;
-}
-.main__servicios .section__bottom .card .card-img .card-text {
-  display: inline-block;
   flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  padding-top: 30px;
+  justify-content: space-around;
+  align-items: center;
+  height: 70%;
+  width: 100%;
+}
+main .main__servicios .main__servicios__info .services__card .services__card--top img {
+  background-color: #f1c4db;
+  border-radius: 50%;
   height: 150px;
+  width: 150px;
+}
+main .main__servicios .main__servicios__info .services__card h3 {
+  font-family: "Castoro Titling", cursive;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+main .main__servicios .main__servicios__info .services__card span {
+  font-family: "Castoro Titling", cursive;
+  font-size: 1rem;
+  text-align: center;
+  color: grey;
+  padding: 0 15px;
 }
 
 .main__contacto {
@@ -458,6 +482,14 @@ footer .footer__copyright h5 {
   }
 }
 @media screen and (max-width: 850px) {
+  .main__servicios .main__servicios__info {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  .main__servicios .main__servicios__info .services__card {
+    width: 5000px;
+  }
   footer .footer__info {
     flex-direction: column;
     height: auto;
