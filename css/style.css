@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap");
@@ -74,12 +75,12 @@ header .menu-icon {
   display: none;
 }
 
-main {
+.main__inicio {
   display: flex;
   flex-direction: column;
   overflow: auto;
 }
-main .hero {
+.main__inicio .hero {
   display: flex;
   flex-direction: column;
   height: 300px;
@@ -90,7 +91,7 @@ main .hero {
   justify-content: center;
   margin-bottom: 30px;
 }
-main .hero h1 {
+.main__inicio .hero h1 {
   font-size: 3rem;
   font-family: "Castoro Titling", cursive;
   color: white;
@@ -100,7 +101,7 @@ main .hero h1 {
   transition: all 2s;
   width: 70%;
 }
-main .content__inicio--top {
+.main__inicio .content__inicio--top {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -108,29 +109,29 @@ main .content__inicio--top {
   box-shadow: 3px 3px 20px rgb(128, 128, 128);
   background-color: rgba(241, 196, 219, 0.6352941176);
 }
-main .content__inicio--top .row__main__inicio--top {
+.main__inicio .content__inicio--top .row__main__inicio--top {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
   border-radius: 15px;
 }
-main .content__inicio--top .row__main__inicio--top .card__nails {
+.main__inicio .content__inicio--top .row__main__inicio--top .card__nails {
   background-color: whitesmoke;
   border-radius: 15px;
   margin: 10px;
   transition: all 1s;
   text-align: center;
 }
-main .content__inicio--top .row__main__inicio--top .card__nails:hover {
+.main__inicio .content__inicio--top .row__main__inicio--top .card__nails:hover {
   transform: scale(1.1);
 }
-main .content__inicio--top .row__main__inicio--top .card__nails img {
+.main__inicio .content__inicio--top .row__main__inicio--top .card__nails img {
   border-radius: 15px;
   box-shadow: 3px 3px 20px rgb(128, 128, 128);
   margin: 30px 20px 20px 20px;
   max-height: 200px;
 }
-main .content__inicio--top .row__main__inicio--top .card__nails .card__nails__title {
+.main__inicio .content__inicio--top .row__main__inicio--top .card__nails .card__nails__title {
   position: absolute;
   top: -20px;
   left: 50%;
@@ -142,30 +143,139 @@ main .content__inicio--top .row__main__inicio--top .card__nails .card__nails__ti
   padding: 8px;
   width: 80%;
 }
-main .content__inicio--top .row__main__inicio--top .card__nails .card__nails__info {
+.main__inicio .content__inicio--top .row__main__inicio--top .card__nails .card__nails__info {
   color: rgb(179, 176, 176);
   font-size: 0.8rem;
   font-weight: normal;
 }
-main .content__inicio__bottom {
+.main__inicio .content__inicio__bottom {
   padding: 20px 50px;
 }
-main .content__inicio__bottom .row__main__inicio--bottom {
+.main__inicio .content__inicio__bottom .row__main__inicio--bottom {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 10px;
 }
-main .content__inicio__bottom .row__main__inicio--bottom .instagram__media {
+.main__inicio .content__inicio__bottom .row__main__inicio--bottom .instagram__media {
   width: 25vw;
   display: flex;
   justify-content: center;
 }
 
+.main__servicios {
+  height: auto;
+  background-image: url("../img/bg-pink.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.main__servicios .not-display {
+  display: none;
+}
+.main__servicios .section__bottom {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  margin: 20px;
+}
+.main__servicios .section__bottom .card {
+  display: flex;
+  flex-direction: row;
+  height: 50%;
+  width: 50%;
+  padding: 20px;
+  transition: all 2s;
+}
+.main__servicios .section__bottom .card .card-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+}
+.main__servicios .section__bottom .card .card-img img {
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+}
+.main__servicios .section__bottom .card .card-img .card-text {
+  display: inline-block;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-top: 30px;
+  height: 150px;
+}
+
+.main__contacto {
+  height: calc(100vh - 100px);
+}
+.main__contacto .section-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-image: url("../img/bg-pink.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: auto;
+}
+.main__contacto .section-contacto .contacto {
+  text-align: center;
+  margin: 20px 0;
+  overflow: auto;
+  padding: 40px 20px;
+  border: 1px solid grey;
+  border-radius: 1%;
+  background-color: rgba(241, 196, 219, 0.5058823529);
+}
+.main__contacto .section-contacto .contacto h2 {
+  font-family: "Castoro Titling", cursive;
+}
+.main__contacto .section-contacto .contacto p {
+  font-family: "Castoro Titling", cursive;
+}
+.main__contacto .section-contacto .contacto form {
+  display: flex;
+  flex-direction: column;
+}
+.main__contacto .section-contacto .contacto form .form-linea {
+  display: flex;
+  justify-content: space-evenly;
+  height: 50px;
+  width: 100%;
+  margin: 10px auto;
+}
+.main__contacto .section-contacto .contacto form label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40px;
+  width: 100px;
+  font-family: "Castoro Titling", cursive;
+}
+.main__contacto .section-contacto .contacto form input {
+  height: 40px;
+  width: 250px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+.main__contacto .section-contacto .contacto form select {
+  font-family: "Castoro Titling", cursive;
+}
+.main__contacto .section-contacto .contacto form textarea {
+  font-family: "Castoro Titling", cursive;
+  border-radius: 5px;
+}
+.main__contacto .section-contacto .contacto form .actions input {
+  width: 150px;
+}
+
 footer {
   display: flex;
   flex-direction: column;
-  height: 300px;
   background-color: #313a46;
 }
 footer .footer__info {
@@ -276,6 +386,133 @@ footer .footer__copyright h5 {
   font-family: "Castoro Titling", cursive;
   font-size: 10px;
   text-align: center;
+}
+
+@media screen and (max-width: 1150px) {
+  /* #### HEADER #### */
+  header .nav-header {
+    /* Esta clase se aplica con JS cuando se presiona .menu-btn */
+  }
+  header .nav-header .visible {
+    display: flex;
+  }
+  header .nav-header .logo-header {
+    height: 40px;
+  }
+  header .nav-header nav {
+    display: none;
+    z-index: 10;
+  }
+  header .nav-header nav .dropdown-menu-mobile {
+    position: absolute;
+    right: 20px;
+    top: 110px;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 0 2px 5px 0 rgb(0, 0, 0);
+  }
+  header .nav-header nav .dropdown-menu-mobile ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+  }
+  header .nav-header nav .dropdown-menu-mobile ul li {
+    margin: 5px;
+  }
+  header .nav-header nav .dropdown-menu-mobile ul li a {
+    color: rgb(0, 0, 0);
+  }
+  header .nav-header nav .dropdown-menu-mobile ul li .selected-page {
+    text-shadow: none;
+    color: inherit;
+  }
+  header .menu-btn {
+    display: inherit;
+    height: 40px;
+    width: 40px;
+    margin-right: 15px;
+    border: none;
+    background-color: inherit;
+  }
+  header .menu-btn img {
+    display: inherit;
+    height: inherit;
+    padding: 3px;
+    border-radius: 10px;
+  }
+  /* #### MAIN #### */
+  main {
+    /* #### GALERÍA #### */
+  }
+  main .section-top--galeria .bg-text {
+    width: 80%;
+  }
+  main .section-bottom--galeria .carousel {
+    width: 80%;
+    margin-top: 40px;
+  }
+  main .section-bottom--galeria .carousel .carousel-inner {
+    background-size: cover !important;
+  }
+}
+@media screen and (max-width: 850px) {
+  footer .footer__info {
+    flex-direction: column;
+    height: auto;
+  }
+  footer .footer__info .footer__social {
+    flex-direction: row;
+    margin: 20px auto 0 auto;
+  }
+  footer .footer__info .footer__services {
+    border-left: none;
+    padding-top: 0;
+    width: auto;
+  }
+  footer .footer__info .footer__services h3 {
+    margin: auto;
+  }
+  footer .footer__info .footer__services .footer__services__info span {
+    margin-left: 1rem;
+  }
+  footer .footer__info .footer__services .footer__services__info .footer__contact--data {
+    margin-left: 2rem;
+  }
+  footer .footer__info .footer__contact {
+    border-left: none;
+    padding-top: 0;
+    width: auto;
+    gap: 0.2rem;
+  }
+  footer .footer__info .footer__contact h3 {
+    margin: auto;
+  }
+  footer .footer__info .footer__contact .footer__contact--item {
+    margin: auto;
+  }
+  footer .footer__info .footer__contact .footer__contact--data {
+    margin: auto;
+  }
+  /* CONTACTO */
+  header .header__info .not-display {
+    display: none;
+  }
+  .section-contacto {
+    background-image: none;
+  }
+  .section-contacto .contacto {
+    background-color: white;
+    border: none;
+  }
+  .section-contacto form textarea {
+    width: 90%;
+  }
+  .section-contacto form input {
+    width: 80%;
+    margin: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -15,11 +15,12 @@ body {
 
 // #### MAIN ####
 @import 'partials/main/inicio';
+@import 'partials/main/servicios';
+@import 'partials/main/contacto';
 // @import 'partials/main/galeria';
-// @import 'partials/main/contacto';
 
 // #### FOOTER ####
 @import 'partials/footer/footer';
 
 // #### @media screen ####
-// @import 'partials/media-screen';
+@import 'partials/media-screen';

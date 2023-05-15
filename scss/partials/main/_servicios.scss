@@ -1,0 +1,53 @@
+.main__servicios {
+  height: auto;
+  background-image: url("../img/bg-pink.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .not-display {
+    display: none;
+  }
+
+  .section-top {
+  }
+
+  .section__bottom {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    margin: 20px;
+
+    .card {
+      display: flex;
+      flex-direction: row;
+      height: 50%;
+      width: 50%;
+      padding: 20px;
+      transition: all 2s;
+
+      .card-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        width: 150px;
+
+        img {
+          height: 150px;
+          width: 150px;
+          border-radius: 100%;
+        }
+
+        .card-text {
+          display: inline-block;
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;
+          padding-top: 30px;
+          height: 150px;
+        }
+      }
+    }
+  }
+}

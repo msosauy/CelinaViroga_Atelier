@@ -1,11 +1,13 @@
-main {
+.main__contacto {
+  height: calc(100vh - 100px);
+
+
   .section-contacto {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
-    margin-top: 10px;
     background-image: url("../img/bg-pink.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,7 +15,7 @@ main {
 
     .contacto {
       text-align: center;
-      margin-top: 20px;
+      margin: 20px 0;
       overflow: auto;
       padding: 40px 20px;
       border: 1px solid grey;
@@ -52,15 +54,25 @@ main {
         input {
           height: 40px;
           width: 250px;
+          border: 1px solid grey;
+          border-radius: 5px;
         }
 
         select {
           font-family: $font-family-primary;
         }
-
+        
         textarea {
           font-family: $font-family-primary;
+          border-radius: 5px;
         }
+
+        .actions {
+          input {
+            width: 150px;
+          }
+        }
+
       }
     }
   }

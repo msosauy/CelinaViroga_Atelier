@@ -1,50 +1,51 @@
 @media screen and (max-width: 1150px) {
-  .not-display {
-    display: none;
-  }
+  // .not-display {
+  //   display: none;
+  // }
 
   /* #### HEADER #### */
 
   header {
-    
-    .logo-header {
-      height: 64px;
-    }
-
-    /* Esta clase se aplica con JS cuando se presiona .menu-btn */
-    .visible {
-      display: flex;
-    }
-
-    nav {
-      display: none;
-      z-index: 10;
-
-      .dropdown-menu-mobile {
-        position: absolute;
-        right: 20px;
-        top: 110px;
+    .nav-header {
+      /* Esta clase se aplica con JS cuando se presiona .menu-btn */
+      .visible {
         display: flex;
-        background-color: rgb(255, 255, 255);
-        border-radius: 15px;
-        box-shadow: 0 2px 5px 0 rgba(0, 0, 0);
+      }
 
-        ul {
+      .logo-header {
+        height: 40px;
+      }
+
+      nav {
+        display: none;
+        z-index: 10;
+
+        .dropdown-menu-mobile {
+          position: absolute;
+          right: 20px;
+          top: 110px;
           display: flex;
-          flex-direction: column;
-          justify-content: center;
-          padding: 10px;
+          background-color: rgb(255, 255, 255);
+          border-radius: 15px;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0);
 
-          li {
-            margin: 5px;
+          ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 10px;
 
-            a {
-              color: rgb(0, 0, 0);
-            }
+            li {
+              margin: 5px;
 
-            .selected-page {
-              text-shadow: none;
-              color: inherit;
+              a {
+                color: rgb(0, 0, 0);
+              }
+
+              .selected-page {
+                text-shadow: none;
+                color: inherit;
+              }
             }
           }
         }
@@ -71,39 +72,39 @@
 
   main {
     // #### INICIO ####
-    .section-bottom {
-      display: flex;
-      flex-wrap: nowrap;
-      height: 100%;
-      width: 100%;
-      margin: unset;
-      align-items: center;
+    // .section-bottom {
+    //   display: flex;
+    //   flex-wrap: nowrap;
+    //   height: 100%;
+    //   width: 100%;
+    //   margin: unset;
+    //   align-items: center;
 
-      .card {
-        display: flex;
-        flex-direction: column;
-        height: 500px;
-        width: 80%;
-        margin: 20px 0;
-        border: 1px solid grey;
+    //   .card {
+    //     display: flex;
+    //     flex-direction: column;
+    //     height: 500px;
+    //     width: 80%;
+    //     margin: 20px 0;
+    //     border: 1px solid grey;
 
-        .card-img {
-          display: flex;
-          height: 75%;
-          margin: auto;
+    //     .card-img {
+    //       display: flex;
+    //       height: 75%;
+    //       margin: auto;
 
-          img {
-            height: 150px;
-            width: 150px;
-          }
-        }
+    //       img {
+    //         height: 150px;
+    //         width: 150px;
+    //       }
+    //     }
 
-        .card-text {
-          // height: 150px;
-          font-size: 10px;
-        }
-      }
-    }
+    //     .card-text {
+    //       // height: 150px;
+    //       font-size: 10px;
+    //     }
+    //   }
+    // }
 
     /* #### GALERÍA #### */
     .section-top--galeria {
@@ -125,9 +126,71 @@
   }
 }
 
+@media screen and (max-width: 850px) {
+  // FOOTER
 
-@media screen and (max-width: 505px) {
+  footer {
+    .footer__info {
+      flex-direction: column;
+      height: auto;
+
+      .footer__social {
+        flex-direction: row;
+        margin: 20px auto 0 auto;
+      }
+
+      .footer__services {
+        border-left: none;
+        padding-top: 0;
+        width: auto;
+
+        h3 {
+          margin: auto;
+        }
+
+        .footer__services__info {
+          span {
+            margin-left: 1rem;
+          }
+
+          .footer__contact--data {
+            margin-left: 2rem;
+          }
+        }
+      }
+
+      .footer__contact {
+        border-left: none;
+        padding-top: 0;
+        width: auto;
+        gap: 0.2rem;
+
+        h3 {
+          margin: auto;
+        }
+
+        .footer__contact--item {
+          margin: auto;
+        }
+
+        .footer__contact--data {
+          margin: auto;
+        }
+
+      }
+
+    }
+  }
+
   /* CONTACTO */
+
+  header {
+    .header__info {
+      .not-display {
+        display: none;
+      }
+    }
+  }
 
   .section-contacto {
     background-image: none;
@@ -138,17 +201,14 @@
     }
 
     form {
-    
       textarea {
         width: 90%;
       }
-    
+
       input {
         width: 80%;
         margin: 10px;
       }
     }
-
   }
-  
 }
