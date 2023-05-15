@@ -15,12 +15,17 @@
 
     .contacto {
       text-align: center;
-      margin: 20px 0;
+      margin: 10px 0;
+      height: 600px;
       overflow: auto;
-      padding: 40px 20px;
+      padding: 0 20px;
       border: 1px solid grey;
       border-radius: 1%;
       background-color: #f1c4db81;
+
+      .mainTitleContacto {
+        margin-top: 10px;
+      }
 
       h2 {
         font-family: $font-family-primary;
@@ -68,7 +73,7 @@
         }
 
         .actions {
-          input {
+           input {
             width: 150px;
           }
         }

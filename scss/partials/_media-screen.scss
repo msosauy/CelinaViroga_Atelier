@@ -1,12 +1,10 @@
 @media screen and (max-width: 1150px) {
-  // .not-display {
-  //   display: none;
-  // }
 
   /* #### HEADER #### */
 
   header {
     .nav-header {
+
       /* Esta clase se aplica con JS cuando se presiona .menu-btn */
       .visible {
         display: flex;
@@ -59,6 +57,7 @@
       margin-right: 15px;
       border: none;
       background-color: inherit;
+
       img {
         display: inherit;
         height: inherit;
@@ -71,40 +70,6 @@
   /* #### MAIN #### */
 
   main {
-    // #### INICIO ####
-    // .section-bottom {
-    //   display: flex;
-    //   flex-wrap: nowrap;
-    //   height: 100%;
-    //   width: 100%;
-    //   margin: unset;
-    //   align-items: center;
-
-    //   .card {
-    //     display: flex;
-    //     flex-direction: column;
-    //     height: 500px;
-    //     width: 80%;
-    //     margin: 20px 0;
-    //     border: 1px solid grey;
-
-    //     .card-img {
-    //       display: flex;
-    //       height: 75%;
-    //       margin: auto;
-
-    //       img {
-    //         height: 150px;
-    //         width: 150px;
-    //       }
-    //     }
-
-    //     .card-text {
-    //       // height: 150px;
-    //       font-size: 10px;
-    //     }
-    //   }
-    // }
 
     /* #### GALERÍA #### */
     .section-top--galeria {
@@ -127,6 +92,22 @@
 }
 
 @media screen and (max-width: 850px) {
+
+  // MAIN INICIO
+
+  .main__inicio {
+    .hero {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .row__main__inicio--top {
+    flex-direction: column;
+  }
+
+
   // MAIN SERVICIOS
 
   .main__servicios {
@@ -141,9 +122,8 @@
       }
 
     }
-    
-  }
 
+  }
 
   // FOOTER
 

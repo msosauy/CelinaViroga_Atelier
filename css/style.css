@@ -199,11 +199,16 @@ main .main__servicios .main__servicios__info .services__card {
   flex-direction: column;
   align-items: center;
   height: 350px;
-  width: 20%;
+  width: 300px;
   border-bottom: 10px solid #f1c4db;
   border-radius: 15px;
   background-color: white;
   margin: 20px;
+  transition: all 1s;
+}
+main .main__servicios .main__servicios__info .services__card:hover {
+  scale: 1.1;
+  box-shadow: 3px 3px 20px rgb(128, 128, 128);
 }
 main .main__servicios .main__servicios__info .services__card .services__card--top {
   display: flex;
@@ -248,12 +253,16 @@ main .main__servicios .main__servicios__info .services__card span {
 }
 .main__contacto .section-contacto .contacto {
   text-align: center;
-  margin: 20px 0;
+  margin: 10px 0;
+  height: 600px;
   overflow: auto;
-  padding: 40px 20px;
+  padding: 0 20px;
   border: 1px solid grey;
   border-radius: 1%;
   background-color: rgba(241, 196, 219, 0.5058823529);
+}
+.main__contacto .section-contacto .contacto .mainTitleContacto {
+  margin-top: 10px;
 }
 .main__contacto .section-contacto .contacto h2 {
   font-family: "Castoro Titling", cursive;
@@ -482,6 +491,12 @@ footer .footer__copyright h5 {
   }
 }
 @media screen and (max-width: 850px) {
+  .main__inicio .hero h1 {
+    font-size: 2rem;
+  }
+  .row__main__inicio--top {
+    flex-direction: column;
+  }
   .main__servicios .main__servicios__info {
     flex-direction: column;
     align-items: center;
