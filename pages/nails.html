@@ -21,54 +21,117 @@
   </head>
 
   <body>
-    <header class="header-mobile">
-      <img src="../img/logo2.png" alt="logo" class="logo-header" />
-      <nav class="dropdown-mobile">
-        <div class="dropdown-menu-mobile">
-          <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="nails.html" class="selected-page">Nails</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="galeria.html">Galería</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-          </ul>
+    <header>
+      <div class="header__info">
+        <div class="header__info__item not-display">
+          <img src="../img/mail1.png" alt="mail" />
+          <span>info@cvatelier.com.uy</span>
         </div>
-      </nav>
-      <button class="menu-btn">
-        <img src="../img/menu_white.png" alt="menu-icon" class="menu-icon" />
-      </button>
+        <div class="header__info__item">
+          <img
+            src="../img/icons/whatsapp.png"
+            alt="uyFlag"
+            class="item__border"
+          />
+          <span>+598 99 870 701</span>
+        </div>
+        <div class="header__info__item">
+          <img src="../img/uy_flag.png" alt="uyFlag" class="item__border" />
+          <span>Rocha, La Paloma</span>
+        </div>
+      </div>
+      <div class="nav-header">
+        <img src="../img/logo2.png" alt="logo" class="logo-header" />
+        <nav class="dropdown-mobile">
+          <div class="dropdown-menu-mobile">
+            <ul>
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="nails.html" class="selected-page">Nails</a></li>
+              <li><a href="servicios.html">Servicios</a></li>
+              <li><a href="galeria.html">Galería</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+        </nav>
+        <button class="menu-btn">
+          <img src="../img/menu_white.png" alt="menu-icon" />
+        </button>
+      </div>
     </header>
     <main>
       <section class="section-top not-display"></section>
-      <section class="section-bottom">
-        
-      </section>
+      <section class="section-bottom"></section>
     </main>
     <footer>
-      <a href="https://www.instagram.com/palomurga/" target="_blank">
-        <img
-          src="../img/instagram-icon.png"
-          alt="instagram_icon"
-          class="footer-icon"
-        />
-      </a>
-      <a href="https://www.facebook.com/palo.murga" target="_blank">
-        <img
-          src="../img/facebook-icon.png"
-          alt="facebook_icon"
-          class="footer-icon"
-        />
-      </a>
-      <a
-        href="https://www.youtube.com/channel/UCVAPguK2TrzQ8CdJ_D1Tagg"
-        target="_blank"
-      >
-        <img
-          src="../img/youtube-icon.png"
-          alt="youtube_icon"
-          class="footer-icon"
-        />
-      </a>
+      <div class="footer__info">
+        <div class="footer__social">
+          <a
+            href="https://www.facebook.com/profile.php?id=100063750150732"
+            target="_blank"
+            ><img src="../img/icons/facebook.png" alt="facebook_icon"
+          /></a>
+          <a
+            href="https://www.instagram.com/celinaviroga.atelier/"
+            target="_blank"
+            ><img src="../img/icons/instagram.png" alt="instagram_icon"
+          /></a>
+          <a href="https://www.pinterest.es/celinaviroga/" target="_blank"
+            ><img src="../img/icons/pinterest.png" alt="instagram_icon"
+          /></a>
+        </div>
+        <div class="footer__services">
+          <h3>ATELIER SERVICIOS</h3>
+          <div class="footer__services__info">
+            <div class="footer__services__info--left">
+              <a href="pages/nails.html">
+                <span>Uñas Esculpidas</span>
+                <span class="footer__contact--data">Acrilicas</span>
+                <span class="footer__contact--data">Esmaltadas</span>
+                <span class="footer__contact--data">Semipermanentes</span>
+              </a>
+              <a href="pages/servicios.html">
+                <span>Depilación Laser</span>
+                <span class="footer__contact--data">Soprano ICE Platinium</span>
+              </a>
+            </div>
+            <div class="footer__services__info--right">
+              <a href="pages/servicios.html">
+                <span>Micropigmentación</span>
+                <span class="footer__contact--data">Maquillaje labios</span>
+                <span class="footer__contact--data">Maquillaje cejas</span>
+              </a>
+              <a href="pages/servicios.html">
+                <span>Spa de Pies</span>
+                <span class="footer__contact--data">Podología</span>
+                <span class="footer__contact--data"
+                  >Estética y salud de pies</span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__contact">
+          <h3>INFORMACIÓN DE CONTACTO</h3>
+          <div class="footer__contact--item">
+            <img src="../img/icons/address.png" alt="address_icon" />
+            <span>Dirección</span>
+          </div>
+          <span class="footer__contact--data">Uruguay - La paloma, Rocha.</span>
+          <div class="footer__contact--item">
+            <img src="../img/icons/phone.png" alt="phone_icon" />
+            <span>Teléfono</span>
+          </div>
+          <span class="footer__contact--data">+598 99 870 701</span>
+          <div class="footer__contact--item">
+            <img src="../img/mail.png" alt="email_icon" />
+            <span>Email</span>
+          </div>
+          <span class="footer__contact--data">info@cvatelier.com.uy</span>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <h5>Copyright © 2023 OneSolutions All rights reserved</h5>
+      </div>
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
@@ -80,6 +143,11 @@
       integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
       crossorigin="anonymous"
     ></script>
+    <!-- AOS Animacion -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../js/index.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

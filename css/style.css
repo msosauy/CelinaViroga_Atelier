@@ -1,312 +1,519 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Castoro Titling", cursive;
 }
 
 body {
-  display: grid;
-  height: 100vh;
-  grid-template-areas:
-    "header"
-    "main"
-    "footer";
-  grid-template-rows: 80px auto 40px;
-  grid-template-columns: 100%;
+  background-color: #EEE7E4;
 }
 
-/* #### HEADER #### */
-
-header {
-  grid-area: header;
+header .header__info {
+  display: flex;
+  justify-content: space-around;
+  height: 25px;
+  background-color: #313a46;
+  font-size: 12px;
+}
+header .header__info .header__info__item {
+  display: flex;
+  align-items: center;
+}
+header .header__info img {
+  height: 15px;
+}
+header .header__info .item__border {
+  border-radius: 15px;
+}
+header .header__info span {
+  color: white;
+  height: 15px;
+  margin: 0 5px;
+  margin-bottom: 5px;
+}
+header .nav-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #f1c4db;
-  border-top: 10px solid white;
-  border-right: 10px solid white;
-  border-radius: 0 50px 50px 0;
-  padding: 20px;
+  height: 75px;
 }
-
-.logo-header {
-  height: 180%;
+header .nav-header .logo-header {
+  height: 50px;
   margin-left: 20px;
 }
-
-nav ul {
+header .nav-header nav ul {
   display: flex;
   margin: auto;
-  list-style: none;
   margin-right: 20px;
 }
-
-.logo-nav {
-  height: 20px;
-}
-
-nav ul li {
+header .nav-header nav ul li {
   margin: auto 20px auto 20px;
+  list-style: none;
+  transition: all 1s;
 }
-
-nav ul li a {
-  color: black;
+header .nav-header nav ul li:hover {
+  transform: scale(1.2);
+}
+header .nav-header nav ul li a {
+  font-family: "Castoro Titling", cursive;
+  font-size: 1.5rem;
   text-decoration: none;
-  font-size: x-large;
-  filter: drop-shadow(0 0 100px #e02157);
+  color: black;
 }
-
-.selected-page {
-  text-shadow: 3px 3px 2px rgba(128, 128, 128, 1);
-  color: #FFFFFF;
+header .nav-header nav ul li .selected-page {
+  color: #ffffff;
+  text-shadow: 3px 3px 2px rgb(128, 128, 128);
 }
-
-.menu-btn,
-.menu-icon {
+header .menu-btn,
+header .menu-icon {
   display: none;
 }
 
-/* #### MAIN #### */
-
-main {
-  grid-area: main;
-  height: 100%;
-  width: 100%;
+.main__inicio {
   display: flex;
   flex-direction: column;
   overflow: auto;
 }
-
-.section-top {
-  height: 40%;
-  margin-top: 10px;
+.main__inicio .hero {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
   background-image: url("../img/bg-pink.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-
-.section-bottom {
-  height: 60%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin: 20px 80px 20px 20px;
-}
-
-.card {
-  display: flex;
-  flex-direction: row;
-  height: 50%;
-  width: 50%;
-  border: none;
-  padding: 20px;
-}
-
-.card-img {
-  display: flex;
   justify-content: center;
-  align-items: center;
-  height: 150px;
-  width: 150px;
+  margin-bottom: 30px;
 }
-
-.card-img img {
-  height: 150px;
-  width: 150px;
-  border-radius: 100%;
-}
-
-.card-text {
-  display: inline-block;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  padding-top: 30px;
-  height: 150px;
-}
-
-/* MAIN Galería */
-
-.section-top--galeria {
-  height: 20%;
-  margin-top: 10px;
-}
-
-.section-bottom--galeria {
-  display: flex;
-  justify-content: center;
-  padding: 5%;
-  height: 80%;
-}
-
-.bg-image {
-  background-image: url("../img/bg-pink.jpeg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  filter: blur(1px);
-  -webkit-filter: blur(1px);
-  height: 100%;
-}
-
-.bg-text {
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(32, 31, 31, 0.4);
-  background-color: rgb(168, 164, 164);
+.main__inicio .hero h1 {
+  font-size: 3rem;
+  font-family: "Castoro Titling", cursive;
   color: white;
-  font-weight: bold;
-  border: 3px solid white;
-  box-shadow: 0.5px 5px 10px rgba(0, 0, 0, 0.493);
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50%;
-  padding: 20px 30px 0 30px;
+  text-shadow: 3px 3px 2px rgb(128, 128, 128);
+  margin-left: 20px;
+  transition-delay: 5s;
+  transition: all 2s;
+  width: 70%;
+}
+.main__inicio .content__inicio--top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  box-shadow: 3px 3px 20px rgb(128, 128, 128);
+  background-color: rgba(241, 196, 219, 0.6352941176);
+}
+.main__inicio .content__inicio--top .row__main__inicio--top {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  border-radius: 15px;
+}
+.main__inicio .content__inicio--top .row__main__inicio--top .card__nails {
+  background-color: whitesmoke;
+  border-radius: 15px;
+  margin: 10px;
+  transition: all 1s;
   text-align: center;
 }
-
-/* Bootstrap class sobrescrita */
-.carousel {
-  width: 50%;
-  box-shadow: 1px 1px 10px black;
-  border: 1px solid grey;
-  border-radius: 5%;
-  /* margin-top: 60px; */
-  overflow: hidden;
+.main__inicio .content__inicio--top .row__main__inicio--top .card__nails:hover {
+  transform: scale(1.1);
+}
+.main__inicio .content__inicio--top .row__main__inicio--top .card__nails img {
+  border-radius: 15px;
+  box-shadow: 3px 3px 20px rgb(128, 128, 128);
+  margin: 30px 20px 20px 20px;
+  max-height: 200px;
+}
+.main__inicio .content__inicio--top .row__main__inicio--top .card__nails .card__nails__title {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Castoro Titling", cursive;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  box-shadow: -0.5px 1px 5px rgba(0, 0, 0, 0.493);
+  padding: 8px;
+  width: 80%;
+}
+.main__inicio .content__inicio--top .row__main__inicio--top .card__nails .card__nails__info {
+  color: rgb(179, 176, 176);
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+.main__inicio .content__inicio__bottom {
+  padding: 20px 50px;
+}
+.main__inicio .content__inicio__bottom .row__main__inicio--bottom {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.main__inicio .content__inicio__bottom .row__main__inicio--bottom .instagram__media {
+  width: 25vw;
+  display: flex;
+  justify-content: center;
 }
 
-/* #### MAIN Contacto #### */
+main .hero {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  background-image: url("../img/bg-pink.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+}
+main .hero h1 {
+  font-size: 3rem;
+  font-family: "Castoro Titling", cursive;
+  color: white;
+  text-shadow: 3px 3px 2px rgb(128, 128, 128);
+  margin-left: 50px;
+  transition-delay: 5s;
+  transition: all 2s;
+  width: 70%;
+}
+main .main__servicios {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+main .main__servicios .main__servicios__info {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-right: 20px;
+}
+main .main__servicios .main__servicios__info .services__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 350px;
+  width: 300px;
+  border-bottom: 10px solid #f1c4db;
+  border-radius: 15px;
+  background-color: white;
+  margin: 20px;
+  transition: all 1s;
+}
+main .main__servicios .main__servicios__info .services__card:hover {
+  scale: 1.1;
+  box-shadow: 3px 3px 20px rgb(128, 128, 128);
+}
+main .main__servicios .main__servicios__info .services__card .services__card--top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 70%;
+  width: 100%;
+}
+main .main__servicios .main__servicios__info .services__card .services__card--top img {
+  background-color: #f1c4db;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+main .main__servicios .main__servicios__info .services__card h3 {
+  font-family: "Castoro Titling", cursive;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+main .main__servicios .main__servicios__info .services__card span {
+  font-family: "Castoro Titling", cursive;
+  font-size: 1rem;
+  text-align: center;
+  color: grey;
+  padding: 0 15px;
+}
 
-.section-contacto {
+.main__contacto {
+  height: calc(100vh - 100px);
+}
+.main__contacto .section-contacto {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
-  margin-top: 10px;
-  background-image: url('../img/bg-pink.jpeg');
+  background-image: url("../img/bg-pink.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   overflow: auto;
 }
-
-.contacto {
+.main__contacto .section-contacto .contacto {
   text-align: center;
-  margin-top: 20px;
+  margin: 10px 0;
+  height: 600px;
   overflow: auto;
-  padding: 40px 20px;
+  padding: 0 20px;
   border: 1px solid grey;
   border-radius: 1%;
-  background-color: #f1c4db81;
+  background-color: rgba(241, 196, 219, 0.5058823529);
 }
-
-form {
+.main__contacto .section-contacto .contacto .mainTitleContacto {
+  margin-top: 10px;
+}
+.main__contacto .section-contacto .contacto h2 {
+  font-family: "Castoro Titling", cursive;
+}
+.main__contacto .section-contacto .contacto p {
+  font-family: "Castoro Titling", cursive;
+}
+.main__contacto .section-contacto .contacto form {
   display: flex;
   flex-direction: column;
 }
-
-.form-linea {
+.main__contacto .section-contacto .contacto form .form-linea {
   display: flex;
   justify-content: space-evenly;
   height: 50px;
   width: 100%;
   margin: 10px auto;
 }
-
-.contacto label {
+.main__contacto .section-contacto .contacto form label {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 40px;
   width: 100px;
+  font-family: "Castoro Titling", cursive;
 }
-
-.section-contacto input {
+.main__contacto .section-contacto .contacto form input {
   height: 40px;
   width: 250px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+.main__contacto .section-contacto .contacto form select {
+  font-family: "Castoro Titling", cursive;
+}
+.main__contacto .section-contacto .contacto form textarea {
+  font-family: "Castoro Titling", cursive;
+  border-radius: 5px;
+}
+.main__contacto .section-contacto .contacto form .actions input {
+  width: 150px;
 }
 
-/* #### FOOTER #### */
+main .content__galeria--top .row__main__galeria--top {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px;
+  gap: 20px;
+}
+main .content__galeria--top .row__main__galeria--top .card__nails--galeria {
+  text-align: center;
+  height: 250px;
+  width: 250px;
+  background-color: white;
+  border-radius: 10px;
+  border-bottom: 5px solid #f1c4db;
+  overflow: hidden;
+  transition: all 1s;
+}
+main .content__galeria--top .row__main__galeria--top .card__nails--galeria:hover {
+  scale: 1.1;
+  translate: 0 10px;
+  box-shadow: 3px 3px 20px rgb(128, 128, 128);
+}
+main .content__galeria--top .row__main__galeria--top .card__nails--galeria img {
+  height: 90%;
+  width: 90%;
+  border-radius: 60%;
+  padding: 10px 0;
+  object-fit: cover;
+}
+main .content__galeria--top .row__main__galeria--top .card__nails--galeria .card__nails__title {
+  display: block;
+  width: 100%;
+  background-color: #f1c4db;
+  font-family: "Castoro Titling", cursive;
+}
+main .content__galeria--bottom {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+main .content__galeria--bottom img {
+  height: 250px;
+  margin: 5px;
+  border-radius: 15px;
+  transition: all 1s;
+}
+main .content__galeria--bottom img:hover {
+  border: 1px solid grey;
+  scale: 1.1;
+  box-shadow: 3px 3px 20px rgb(128, 128, 128);
+}
 
 footer {
-  grid-area: footer;
   display: flex;
+  flex-direction: column;
+  background-color: #313a46;
+}
+footer .footer__info {
+  display: flex;
+  justify-content: space-between;
+  height: 285px;
+  gap: 10px;
+}
+footer .footer__info .footer__social {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to top, #f0088080, #f131942a, #f08cc000);
+  gap: 1rem;
+  width: 20%;
 }
-
-footer a {
+footer .footer__info .footer__social img {
+  height: 30px;
+}
+footer .footer__info .footer__services {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  width: 50%;
+  margin: 15px 0;
+  border-left: 1px solid grey;
+}
+footer .footer__info .footer__services h3 {
+  display: inline;
+  color: #f1c4db;
+  font-family: "Verdana", cursive;
+  font-size: 1.2rem;
+  margin-left: 40px;
+}
+footer .footer__info .footer__services span {
+  display: block;
+  color: white;
+  font-family: "Verdana", cursive;
+  font-size: 1rem;
+  padding: 0.1rem;
+  margin-left: 60px;
+}
+footer .footer__info .footer__services .footer__contact--data {
+  color: rgb(179, 176, 176);
+  font-size: 0.8rem;
+  font-weight: normal;
+  margin-left: 75px;
+}
+footer .footer__info .footer__services h3 {
+  margin-left: 70px;
+}
+footer .footer__info .footer__services .footer__services__info {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10px;
+}
+footer .footer__info .footer__services a {
   text-decoration: none;
 }
-
-.brand {
+footer .footer__info .footer__contact {
   display: flex;
-  margin: 5px 5px auto 5px;
-  justify-content: center;
-  color: rgba(255, 255, 255, 0.705);
-  font-size: 15px;
+  flex-direction: column;
+  padding-top: 30px;
+  width: 30%;
+  margin: 15px 0;
+  border-left: 1px solid grey;
 }
-
-.footer-icon {
-  height: 30px;
+footer .footer__info .footer__contact h3 {
+  display: inline;
+  color: #f1c4db;
+  font-family: "Verdana", cursive;
+  font-size: 1.2rem;
+  margin-left: 40px;
+}
+footer .footer__info .footer__contact span {
+  display: block;
+  color: white;
+  font-family: "Verdana", cursive;
+  font-size: 1rem;
+  padding: 0.1rem;
+  margin-left: 60px;
+}
+footer .footer__info .footer__contact .footer__contact--data {
+  color: rgb(179, 176, 176);
+  font-size: 0.8rem;
+  font-weight: normal;
+  margin-left: 75px;
+}
+footer .footer__info .footer__contact .footer__contact--item {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+footer .footer__info .footer__contact .footer__contact--item span {
+  margin-left: 0;
+}
+footer .footer__info .footer__contact .footer__contact--item img {
+  height: 1rem;
+  margin-right: 10px;
+}
+footer .footer__copyright {
+  display: flex;
+  justify-content: center;
+  height: 15px;
+}
+footer .footer__copyright h5 {
+  color: white;
+  font-family: "Castoro Titling", cursive;
+  font-size: 10px;
+  text-align: center;
 }
 
 @media screen and (max-width: 1150px) {
   /* #### HEADER #### */
-
-  .not-display {
-    display: none;
+  header .nav-header {
+    /* Esta clase se aplica con JS cuando se presiona .menu-btn */
   }
-
-  .logo-header {
-    height: 64px;
+  header .nav-header .visible {
+    display: flex;
   }
-
-  .dropdown-mobile {
+  header .nav-header .logo-header {
+    height: 40px;
+  }
+  header .nav-header nav {
     display: none;
     z-index: 10;
   }
-
-  /* Esta clase se aplica con JS cuando se presiona .menu-btn */
-  .dropdown-mobile.visible {
-    display: flex;
-  }
-
-  .dropdown-menu-mobile {
+  header .nav-header nav .dropdown-menu-mobile {
     position: absolute;
     right: 20px;
-    top: 80px;
+    top: 110px;
     display: flex;
     background-color: rgb(255, 255, 255);
     border-radius: 15px;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0);
+    box-shadow: 0 2px 5px 0 rgb(0, 0, 0);
   }
-
-  .selected-page {
-    text-shadow: none;
-    color: black;
-  }
-
-
-  nav ul {
+  header .nav-header nav .dropdown-menu-mobile ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 10px;
   }
-
-  nav ul li {
+  header .nav-header nav .dropdown-menu-mobile ul li {
     margin: 5px;
   }
-
-  nav ul li a {
+  header .nav-header nav .dropdown-menu-mobile ul li a {
     color: rgb(0, 0, 0);
   }
-  .menu-btn {
+  header .nav-header nav .dropdown-menu-mobile ul li .selected-page {
+    text-shadow: none;
+    color: inherit;
+  }
+  header .menu-btn {
     display: inherit;
     height: 40px;
     width: 40px;
@@ -314,86 +521,112 @@ footer a {
     border: none;
     background-color: inherit;
   }
-
-  .menu-icon {
+  header .menu-btn img {
     display: inherit;
     height: inherit;
     padding: 3px;
     border-radius: 10px;
   }
-
   /* #### MAIN #### */
-
-  .section-bottom {
-    display: flex;
-    flex-wrap: nowrap;
-    height: 100%;
-    width: 100%;
-    margin: unset;
-    align-items: center;
+  main {
+    /* #### GALERÍA #### */
   }
-
-  .card {
-    display: flex;
-    flex-direction: column;
-    height: 500px;
-    width: 80%;
-    margin: 20px 0;
-    border: 1px solid grey;
+  main .content__galeria--top {
+    overflow: auto;
   }
-
-  .card-img {
-    display: flex;
-    height: 75%;
-    margin: auto;
+  main .content__galeria--top .row__main__galeria--top {
+    flex-wrap: wrap;
   }
-  
-  .card-img img {
-    height: 150px;
-    width: 150px;
-  }
-
-  .card-text {
-    height: 150px;
-    font-size: 10px;
-  }
-
-  /* Galeria */
-
-  .bg-text {
+  main .section-top--galeria .bg-text {
     width: 80%;
   }
-  .carousel {
-    width: 120%;
+  main .section-bottom--galeria .carousel {
+    width: 80%;
     margin-top: 40px;
   }
-
-  .carousel-inner{
+  main .section-bottom--galeria .carousel .carousel-inner {
     background-size: cover !important;
   }
-
 }
-
-@media screen and (max-width: 505px) {
-  
+@media screen and (max-width: 850px) {
+  .main__inicio .hero h1 {
+    font-size: 2rem;
+  }
+  .main__inicio .content__inicio--top {
+    flex-direction: column;
+    background-color: inherit;
+  }
+  .main__inicio .content__inicio__bottom .row__main__inicio--bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .row__main__inicio--top {
+    flex-direction: column;
+  }
+  .main__servicios .main__servicios__info {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  .content__galeria--top .row__main__galeria--top .card__nails--galeria {
+    width: 400px;
+  }
+  footer .footer__info {
+    flex-direction: column;
+    height: auto;
+  }
+  footer .footer__info .footer__social {
+    flex-direction: row;
+    margin: 20px auto 0 auto;
+  }
+  footer .footer__info .footer__services {
+    border-left: none;
+    padding-top: 0;
+    width: auto;
+  }
+  footer .footer__info .footer__services h3 {
+    margin: auto;
+  }
+  footer .footer__info .footer__services .footer__services__info span {
+    margin-left: 1rem;
+  }
+  footer .footer__info .footer__services .footer__services__info .footer__contact--data {
+    margin-left: 2rem;
+  }
+  footer .footer__info .footer__contact {
+    border-left: none;
+    padding-top: 0;
+    width: auto;
+    gap: 0.2rem;
+  }
+  footer .footer__info .footer__contact h3 {
+    margin: auto;
+  }
+  footer .footer__info .footer__contact .footer__contact--item {
+    margin: auto;
+  }
+  footer .footer__info .footer__contact .footer__contact--data {
+    margin: auto;
+  }
   /* CONTACTO */
-  
-  textarea {
-    width: 90%;
+  header .header__info .not-display {
+    display: none;
   }
-
-  .actions input {
-    width: 80%;
-    margin: 10px;
-  }
-
   .section-contacto {
     background-image: none;
   }
-
-  .contacto {
+  .section-contacto .contacto {
     background-color: white;
     border: none;
   }
-
+  .section-contacto form textarea {
+    width: 90%;
+  }
+  .section-contacto form input {
+    width: 80%;
+    margin: 10px;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */

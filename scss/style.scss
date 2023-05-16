@@ -1,0 +1,26 @@
+@import "partials/variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $color-secondary;
+}
+
+// #### HEADER ####
+@import "partials/header/header";
+
+// #### MAIN ####
+@import 'partials/main/inicio';
+@import 'partials/main/servicios';
+@import 'partials/main/contacto';
+@import 'partials/main/galeria';
+
+// #### FOOTER ####
+@import 'partials/footer/footer';
+
+// #### @media screen ####
+@import 'partials/media-screen';

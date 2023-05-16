@@ -16,125 +16,369 @@
       href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap"
       rel="stylesheet"
     />
+    <!-- AOS Animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/style.css" />
     <title>CV-Atelier</title>
   </head>
 
   <body>
-    <header class="header-mobile">
-      <img src="../img/logo2.png" alt="logo" class="logo-header" />
-      <nav class="dropdown-mobile">
-        <div class="dropdown-menu-mobile">
-          <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="nails.html">Nails</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="galeria.html" class="selected-page">Galería</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-          </ul>
+    <header>
+      <div class="header__info">
+        <div class="header__info__item not-display">
+          <img src="../img/mail1.png" alt="mail" />
+          <span>info@cvatelier.com.uy</span>
         </div>
-      </nav>
-      <button class="menu-btn">
-        <img src="../img/menu_white.png" alt="menu-icon" class="menu-icon" />
-      </button>
+        <div class="header__info__item">
+          <img
+            src="../img/icons/whatsapp.png"
+            alt="uyFlag"
+            class="item__border"
+          />
+          <span>+598 99 870 701</span>
+        </div>
+        <div class="header__info__item">
+          <img src="../img/uy_flag.png" alt="uyFlag" class="item__border" />
+          <span>Rocha, La Paloma</span>
+        </div>
+      </div>
+      <div class="nav-header">
+        <img src="../img/logo2.png" alt="logo" class="logo-header" />
+        <nav class="dropdown-mobile">
+          <div class="dropdown-menu-mobile">
+            <ul>
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="nails.html">Nails</a></li>
+              <li><a href="servicios.html">Servicios</a></li>
+              <li><a href="galeria.html" class="selected-page">Galería</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+        </nav>
+        <button class="menu-btn">
+          <img src="../img/menu_white.png" alt="menu-icon" />
+        </button>
+      </div>
     </header>
     <main>
-      <section class="section-top--galeria">
-        <div class="bg-image"></div>
-        <div class="bg-text">
-          <h2>Nuestro camino</h2>
-          <p>Nuestra historia</p>
-        </div>
-      </section>
-      <section class="section-bottom--galeria">
+      <section class="content__galeria--top">
         <div
-          id="carouselExampleAutoplaying"
-          class="carousel slide"
-          data-bs-ride="carousel"
+          data-aos="zoom-in"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1500"
         >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="../img/galeria/img_1.jpg"
-                class="d-block w-100"
-                alt="img"
-              />
+          <div class="row__main__galeria--top">
+            <div
+              class="card__nails--galeria"
+              data-aos="fade-left"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="2000"
+            >
+              <span class="card__nails__title">Handmade - Acrilicas</span>
+              <img src="../img/galeria/gif/gif_1.gif" alt="imagen_nail" />
             </div>
-            <div class="carousel-item">
-              <img
-                src="../img/galeria/img_2.jpg"
-                class="d-block w-100"
-                alt="img"
-              />
+            <div
+              class="card__nails--galeria"
+              data-aos="fade-left"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="2000"
+            >
+              <span class="card__nails__title">Semi - Dorado</span>
+              <img src="../img/galeria/img_3.jpg" alt="imagen_nail" />
             </div>
-            <div class="carousel-item">
-              <img
-                src="../img/galeria/img_3.jpg"
-                class="d-block w-100"
-                alt="img"
-              />
+            <div
+              class="card__nails--galeria"
+              data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="2000"
+            >
+              <span class="card__nails__title">Esmaltado - Flour</span>
+              <img src="../img/galeria/gif/gif_9.gif" alt="imagen_nail" />
             </div>
-            <div class="carousel-item">
-              <img
-                src="../img/galeria/img_4.jpg"
-                class="d-block w-100"
-                alt="img"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="../img/galeria/img_5.jpg"
-                class="d-block w-100"
-                alt="img"
-              />
+            <div
+              class="card__nails--galeria"
+              data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="2000"
+            >
+              <span class="card__nails__title">Esmaltado - Metálico</span>
+              <img src="../img/galeria/img_4.jpg" alt="imagen_nail" />
             </div>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="prev"
+        </div>
+      </section>
+      <section>
+        <div class="content__galeria--bottom">
+          <div
+            data-aos="flip-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="2000"
           >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="next"
+            <img src="../img/galeria/img_1.jpg" alt="img_nails" />
+          </div>
+          <div
+            data-aos="flip-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="2000"
           >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+            <img src="../img/galeria/gif/gif_10.gif" alt="gif_nails" />
+          </div>
+          <div
+            data-aos="flip-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="2000"
+          >
+            <img src="../img/galeria/img_2.jpg" alt="img_nails" />
+          </div>
+          <div
+            data-aos="flip-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="2000"
+          >
+            <img src="../img/galeria/img_3.jpg" alt="img_nails" />
+          </div>
+          <div
+            data-aos="flip-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="2000"
+          >
+            <img src="../img/galeria/gif/gif_2.gif" alt="gif_nails" />
+          </div>
+          <div
+            data-aos="flip-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="2000"
+          >
+            <img src="../img/galeria/img_4.jpg" alt="img_nails" />
+          </div>
+          <div
+            data-aos="flip-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="2000"
+          >
+            <img src="../img/galeria/img_5.jpg" alt="img_nails" />
+          </div>
+          <div
+            data-aos="flip-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="2000"
+          >
+            <img src="../img/galeria/gif/gif_3.gif" alt="gif_nails" />
+          </div>
+          <div
+            data-aos="flip-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="2000"
+          >
+            <img src="../img/galeria/img_6.jpg" alt="img_nails" />
+          </div>
+          <div
+            data-aos="flip-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="2000"
+          >
+            <img src="../img/galeria/img_7.jpg" alt="img_nails" />
+          </div>
+          <div
+            data-aos="flip-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="2000"
+          >
+            <img src="../img/galeria/img_8.jpg" alt="img_nails" />
+          </div>
+          <div
+            data-aos="flip-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="2000"
+          >
+            <img src="../img/galeria/gif/gif_4.gif" alt="gif_nails" />
+          </div>
+          <div
+            data-aos="flip-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="2000"
+          >
+            <img src="../img/galeria/img_9.jpg" alt="img_nails" />
+          </div>
+          <div
+            data-aos="flip-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="2000"
+          >
+            <img src="../img/galeria/gif/gif_5.gif" alt="gif_nails" />
+          </div>
+          <div
+            data-aos="flip-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="2000"
+          >
+            <img src="../img/galeria/gif/gif_6.gif" alt="gif_nails" />
+          </div>
+          <div
+            data-aos="flip-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="2000"
+          >
+            <img src="../img/galeria/img_10.jpg" alt="img_nails" />
+          </div>
+          <div
+            data-aos="flip-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="2000"
+          >
+            <img src="../img/galeria/img_11.jpg" alt="img_nails" />
+          </div>
+          <div
+            data-aos="flip-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="2000"
+          >
+            <img src="../img/galeria/img_12.jpg" alt="img_nails" />
+          </div>
+          <div
+            data-aos="flip-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="2000"
+          >
+            <img src="../img/galeria/img_13.jpg" alt="img_nails" />
+          </div>
+          <div
+            data-aos="flip-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="2000"
+          >
+            <img src="../img/galeria/gif/gif_7.gif" alt="gif_nails" />
+          </div>
+          <div
+            data-aos="flip-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="2000"
+          >
+            <img src="../img/galeria/img_14.jpg" alt="img_nails" />
+          </div>
+          <div
+            data-aos="flip-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="2000"
+          >
+            <img src="../img/galeria/img_15.jpg" alt="img_nails" />
+          </div>
+          <div
+            data-aos="flip-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="2000"
+          >
+            <img src="../img/galeria/gif/gif_8.gif" alt="gif_nails" />
+          </div>
+          <div
+            data-aos="flip-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="2000"
+          >
+            <img src="../img/galeria/img_16.jpg" alt="img_nails" />
+          </div>
         </div>
       </section>
     </main>
     <footer>
-      <a href="https://www.instagram.com/palomurga/" target="_blank">
-        <img
-          src="../img/instagram-icon.png"
-          alt="instagram_icon"
-          class="footer-icon"
-        />
-      </a>
-      <a href="https://www.facebook.com/palo.murga" target="_blank">
-        <img
-          src="../img/facebook-icon.png"
-          alt="facebook_icon"
-          class="footer-icon"
-        />
-      </a>
-      <a
-        href="https://www.youtube.com/channel/UCVAPguK2TrzQ8CdJ_D1Tagg"
-        target="_blank"
-      >
-        <img
-          src="../img/youtube-icon.png"
-          alt="youtube_icon"
-          class="footer-icon"
-        />
-      </a>
+      <div class="footer__info">
+        <div class="footer__social">
+          <a
+            href="https://www.facebook.com/profile.php?id=100063750150732"
+            target="_blank"
+            ><img src="../img/icons/facebook.png" alt="facebook_icon"
+          /></a>
+          <a
+            href="https://www.instagram.com/celinaviroga.atelier/"
+            target="_blank"
+            ><img src="../img/icons/instagram.png" alt="instagram_icon"
+          /></a>
+          <a href="https://www.pinterest.es/celinaviroga/" target="_blank"
+            ><img src="../img/icons/pinterest.png" alt="instagram_icon"
+          /></a>
+        </div>
+        <div class="footer__services">
+          <h3>ATELIER SERVICIOS</h3>
+          <div class="footer__services__info">
+            <div class="footer__services__info--left">
+              <a href="pages/nails.html">
+                <span>Uñas Esculpidas</span>
+                <span class="footer__contact--data">Acrilicas</span>
+                <span class="footer__contact--data">Esmaltadas</span>
+                <span class="footer__contact--data">Semipermanentes</span>
+              </a>
+              <a href="pages/servicios.html">
+                <span>Depilación Laser</span>
+                <span class="footer__contact--data">Soprano ICE Platinium</span>
+              </a>
+            </div>
+            <div class="footer__services__info--right">
+              <a href="pages/servicios.html">
+                <span>Micropigmentación</span>
+                <span class="footer__contact--data">Maquillaje labios</span>
+                <span class="footer__contact--data">Maquillaje cejas</span>
+              </a>
+              <a href="pages/servicios.html">
+                <span>Spa de Pies</span>
+                <span class="footer__contact--data">Podología</span>
+                <span class="footer__contact--data"
+                  >Estética y salud de pies</span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__contact">
+          <h3>INFORMACIÓN DE CONTACTO</h3>
+          <div class="footer__contact--item">
+            <img src="../img/icons/address.png" alt="address_icon" />
+            <span>Dirección</span>
+          </div>
+          <span class="footer__contact--data">Uruguay - La paloma, Rocha.</span>
+          <div class="footer__contact--item">
+            <img src="../img/icons/phone.png" alt="phone_icon" />
+            <span>Teléfono</span>
+          </div>
+          <span class="footer__contact--data">+598 99 870 701</span>
+          <div class="footer__contact--item">
+            <img src="../img/mail.png" alt="email_icon" />
+            <span>Email</span>
+          </div>
+          <span class="footer__contact--data">info@cvatelier.com.uy</span>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <h5>Copyright © 2023 OneSolutions All rights reserved</h5>
+      </div>
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
@@ -146,6 +390,11 @@
       integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
       crossorigin="anonymous"
     ></script>
+    <!-- AOS Animacion -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../js/index.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
