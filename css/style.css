@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -153,7 +154,7 @@ header .menu-icon {
 }
 .main__inicio .content__inicio__bottom .row__main__inicio--bottom {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
   gap: 10px;
 }
@@ -304,6 +305,57 @@ main .main__servicios .main__servicios__info .services__card span {
 }
 .main__contacto .section-contacto .contacto form .actions input {
   width: 150px;
+}
+
+main .content__galeria--top .row__main__galeria--top {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px;
+  gap: 20px;
+}
+main .content__galeria--top .row__main__galeria--top .card__nails--galeria {
+  text-align: center;
+  height: 250px;
+  width: 250px;
+  background-color: white;
+  border-radius: 10px;
+  border-bottom: 5px solid #f1c4db;
+  overflow: hidden;
+  transition: all 1s;
+}
+main .content__galeria--top .row__main__galeria--top .card__nails--galeria:hover {
+  scale: 1.1;
+  translate: 0 10px;
+  box-shadow: 3px 3px 20px rgb(128, 128, 128);
+}
+main .content__galeria--top .row__main__galeria--top .card__nails--galeria img {
+  height: 90%;
+  width: 90%;
+  border-radius: 60%;
+  padding: 10px 0;
+  object-fit: cover;
+}
+main .content__galeria--top .row__main__galeria--top .card__nails--galeria .card__nails__title {
+  display: block;
+  width: 100%;
+  background-color: #f1c4db;
+  font-family: "Castoro Titling", cursive;
+}
+main .content__galeria--bottom {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+main .content__galeria--bottom img {
+  height: 250px;
+  margin: 5px;
+  border-radius: 15px;
+  transition: all 1s;
+}
+main .content__galeria--bottom img:hover {
+  border: 1px solid grey;
+  scale: 1.1;
+  box-shadow: 3px 3px 20px rgb(128, 128, 128);
 }
 
 footer {
@@ -479,6 +531,12 @@ footer .footer__copyright h5 {
   main {
     /* #### GALERÍA #### */
   }
+  main .content__galeria--top {
+    overflow: auto;
+  }
+  main .content__galeria--top .row__main__galeria--top {
+    flex-wrap: wrap;
+  }
   main .section-top--galeria .bg-text {
     width: 80%;
   }
@@ -494,6 +552,15 @@ footer .footer__copyright h5 {
   .main__inicio .hero h1 {
     font-size: 2rem;
   }
+  .main__inicio .content__inicio--top {
+    flex-direction: column;
+    background-color: inherit;
+  }
+  .main__inicio .content__inicio__bottom .row__main__inicio--bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .row__main__inicio--top {
     flex-direction: column;
   }
@@ -502,8 +569,8 @@ footer .footer__copyright h5 {
     align-items: center;
     margin: 0;
   }
-  .main__servicios .main__servicios__info .services__card {
-    width: 5000px;
+  .content__galeria--top .row__main__galeria--top .card__nails--galeria {
+    width: 400px;
   }
   footer .footer__info {
     flex-direction: column;

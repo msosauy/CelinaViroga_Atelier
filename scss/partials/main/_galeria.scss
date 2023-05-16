@@ -1,46 +1,66 @@
-.section-top--galeria {
-  height: 20%;
-  margin-top: 10px;
+@import "../variables";
 
-  .bg-image {
-    background-image: url("../img/bg-pink.jpeg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    filter: blur(1px);
-    -webkit-filter: blur(1px);
-    height: 100%;
+main {
+  .content__galeria--top {
+    .row__main__galeria--top {
+      display: flex;
+      justify-content: space-evenly;
+      // height: 400px;
+      margin: 10px;
+      gap: 20px;
+
+      .card__nails--galeria {
+        text-align: center;
+        height: 250px;
+        width: 250px;
+        background-color: white;
+        border-radius: 10px;
+        border-bottom: 5px solid $color-primary;
+        overflow: hidden;
+        transition: all 1s;
+
+        &:hover {
+          scale: 1.1;
+          translate: 0 10px;
+          box-shadow: $box-shadow;
+        }
+
+        img {
+          height: 90%;
+          width: 90%;
+          border-radius: 60%;
+          padding: 10px 0;
+          object-fit: cover;
+        }
+
+        .card__nails__title {
+          display: block;
+          width: 100%;
+          background-color: $color-primary;
+          font-family: $font-family-primary;
+        }
+      }
+    }
   }
 
-  .bg-text {
-    background-color: rgb(168, 164, 164);
-    color: white;
-    font-weight: bold;
-    border: 3px solid white;
-    box-shadow: 0.5px 5px 10px rgba(0, 0, 0, 0.493);
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50%;
-    padding: 20px 30px 0 30px;
-    font-family: $font-family-primary;
-    text-align: center;
+  .content__galeria--bottom {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    
+    
+    img{
+      height: 250px;
+      margin: 5px;
+      border-radius: 15px;
+      transition: all 1s;
+      
+      &:hover {
+        border: 1px solid grey;
+        scale: 1.1;
+        box-shadow: $box-shadow;
+      }
+    }
   }
-}
 
-.section-bottom--galeria {
-  display: flex;
-  justify-content: center;
-  padding: 5%;
-  height: 80%;
-
-  /* Bootstrap class sobrescrita */
-  .carousel {
-    width: 600px;
-    box-shadow: 1px 1px 10px black;
-    border-radius: 10%;
-    overflow: hidden;
-    height: fit-content;
-  }
 }

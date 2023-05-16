@@ -1,10 +1,8 @@
 @media screen and (max-width: 1150px) {
-
   /* #### HEADER #### */
 
   header {
     .nav-header {
-
       /* Esta clase se aplica con JS cuando se presiona .menu-btn */
       .visible {
         display: flex;
@@ -70,8 +68,16 @@
   /* #### MAIN #### */
 
   main {
-
     /* #### GALERÍA #### */
+
+    .content__galeria--top {
+      overflow: auto;
+
+      .row__main__galeria--top {
+        flex-wrap: wrap;
+      }
+    }
+
     .section-top--galeria {
       .bg-text {
         width: 80%;
@@ -92,7 +98,6 @@
 }
 
 @media screen and (max-width: 850px) {
-
   // MAIN INICIO
 
   .main__inicio {
@@ -101,28 +106,43 @@
         font-size: 2rem;
       }
     }
+
+    .content__inicio--top {
+      flex-direction: column;
+      background-color: inherit;
+    }
+
+    .content__inicio__bottom {
+      .row__main__inicio--bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
   }
 
   .row__main__inicio--top {
     flex-direction: column;
   }
 
-
   // MAIN SERVICIOS
 
   .main__servicios {
-
     .main__servicios__info {
       flex-direction: column;
       align-items: center;
       margin: 0;
-
-      .services__card {
-        width: 5000px;
-      }
-
     }
+  }
 
+  // MAIN GALERIA
+
+  .content__galeria--top {
+    .row__main__galeria--top {
+      .card__nails--galeria {
+        width: 400px;
+      }
+    }
   }
 
   // FOOTER
