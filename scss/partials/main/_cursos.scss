@@ -1,0 +1,61 @@
+@import "../variables";
+
+main {
+    text-align: center;
+
+    h1{
+        margin-top: 20px;
+        font-family: $font-family-primary;
+    }
+
+    .main__cursos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 20px;
+      
+        .card__curso {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          background-color: white;
+          height: 500px;
+          width: 350px;
+          border-radius: 35px;
+          overflow: hidden;
+          box-shadow: $box-shadow;
+          margin: 20px;
+          border-bottom: 10px solid $color-primary;
+      
+          img {
+            height: 50%;
+            width: auto;
+          }
+      
+          h3 {
+            text-align: center;
+            color: $color-primary;
+            margin-top: 10px;
+          }
+      
+          .card__content--top {
+            text-align: center;
+            color: black;
+            font-family: $font-family-footer;
+            font-size: 1rem;
+            padding: 10px;
+          }
+          
+          .card__content--bottom {
+              text-align: center;
+              color: rgb(179, 176, 176);
+              font-size: 0.8rem;
+              font-family: $font-family-footer;
+              font-weight: normal;
+              padding: 5px;
+              border-top: 1px solid grey;
+              height: 50px;
+          }
+        }
+      }
+}

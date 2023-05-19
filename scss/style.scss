@@ -1,5 +1,8 @@
 @import "partials/variables";
 
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
@@ -15,9 +18,10 @@ body {
 
 // #### MAIN ####
 @import 'partials/main/inicio';
+@import 'partials/main/cursos';
 @import 'partials/main/servicios';
-@import 'partials/main/contacto';
 @import 'partials/main/galeria';
+@import 'partials/main/contacto';
 
 // #### FOOTER ####
 @import 'partials/footer/footer';
